@@ -1,12 +1,24 @@
 .container-div {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 100px;
 }
 
 .container-div > ul {
   display: flex;
 }
 
-.container-div > ul > li{
+.container-div > h1 {
+  font-size: 2.1875rem;
+}
+
+.container-div > ul > li {
   display: inline-block;
+  font-size: 0.8125000000000001rem;
+  line-height: 1.53846154;
+  text-transform: uppercase;
+  color: #757575;
+  letter-spacing: 1.5px;
+  margin: 0px 10px;
 }
