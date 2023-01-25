@@ -1,3 +1,9 @@
-*{
-  list-style: none;
+* {
+	list-style: none;
 }
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+
