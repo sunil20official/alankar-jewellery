@@ -1,0 +1,12 @@
+.container-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-div > ul {
+  display: flex;
+}
+
+.container-div > ul > li{
+  display: inline-block;
+}
