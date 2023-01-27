@@ -11,9 +11,9 @@ video {
 
 .heroSection_content {
 	position: absolute;
-	width: 100%;
+	/* width: 100%; */
 	height: 100vh;
-	left: 25%;
+	right: 300px;
 	top: 0;
 	display: flex;
 	flex-direction: column;
