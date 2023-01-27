@@ -5,8 +5,13 @@
   height: 100px;
 }
 
+.burger-menu-container{
+    display: none;
+  }
+
 .container-div > ul {
   display: flex;
+  min-width: 200px;
 }
 
 .container-div > h1 {
@@ -21,4 +26,22 @@
   color: #757575;
   letter-spacing: 1.5px;
   margin: 0px 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .container-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+  }
+  .container-div > h1 {
+    font-size: 1.1875rem;
+  }
+  .container-div > ul {
+    display: none;
+  }
+  .burger-menu-container{
+    display: inline;
+  }
 }

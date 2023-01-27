@@ -1,12 +1,28 @@
 import React from 'react';
 import './Navbar.css';
-
+import Headroom from 'react-headroom';
 const Navbar = () => {
   return (
-    <>
-      <header className="app-header">
-        <nav className='nav-header'>
-          <div className='container-div'>
+    <Headroom>
+      <header style={{ background: "#fff" }} className="app-header">
+        <nav className="nav-header">
+          <div className="container-div">
+            <div className='burger-menu-container'>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1 4H19V5H1V4ZM19 10H1V11H19V10ZM19 16H1V17H19V16Z"
+                  fill="#757575"
+                />
+              </svg>
+            </div>
             <ul>
               <li>creations</li>
               <li>the maisons</li>
@@ -48,22 +64,8 @@ const Navbar = () => {
             </ul>
           </div>
         </nav>
-        {/* <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M1 4H19V5H1V4ZM19 10H1V11H19V10ZM19 16H1V17H19V16Z"
-            fill="#757575"
-          />
-        </svg> */}
       </header>
-    </>
+    </Headroom>
   );
 }
 
