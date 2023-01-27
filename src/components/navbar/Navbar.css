@@ -15,7 +15,11 @@
 }
 
 .container-div > h1 {
-  font-size: 2.1875rem;
+  font-size: 2rem;
+  font-family: SemiBoldCaslon;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 4px;
 }
 
 .container-div > ul > li {
@@ -26,6 +30,11 @@
   color: #757575;
   letter-spacing: 1.5px;
   margin: 0px 10px;
+  cursor: pointer;
+}
+
+.offcanvas-start {
+  height: 100vh;
 }
 
 @media screen and (max-width: 900px) {
