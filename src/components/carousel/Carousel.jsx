@@ -32,7 +32,7 @@ const Carousel = () => {
 	return (
 		<div>
 			<div className='carousel-container'>
-				<div className='carousel-section' style={{ background: 'yellowgreen' }}>
+				<div className='carousel-section'>
 					<Swiper
 						// spaceBetween={50}
 						// slidesPerView={3}
@@ -43,33 +43,33 @@ const Carousel = () => {
 						className='mySwiper'
 					>
 						<SwiperSlide>
-							<img src={Slide1} alt='' />
+							<img src={Slide1} alt='CaruoselImage' />
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={Slide2} alt='' />
+							<img src={Slide2} alt='CaruoselImage' />
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={Slide3} alt='' />
+							<img src={Slide3} alt='CaruoselImage' />
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={Slide4} alt='' />
+							<img src={Slide4} alt='CaruoselImage' />
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={Slide5} alt='' />
+							<img src={Slide5} alt='CaruoselImage' />
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={Slide6} alt='' />
+							<img src={Slide6} alt='CaruoselImage' />
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={Slide7} alt='' />
+							<img src={Slide7} alt='CaruoselImage' />
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={Slide8} alt='' />
+							<img src={Slide8} alt='CaruoselImage' />
 						</SwiperSlide>
 					</Swiper>
 				</div>
 				<div className='carousel-left-Image'>
-					<img src={image1} alt='' className='carousel-img' />
+					<img src={image1} alt='CaruoselImage' className='carousel-img' />
 				</div>
 			</div>
 		</div>

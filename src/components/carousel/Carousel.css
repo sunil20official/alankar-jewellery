@@ -52,6 +52,7 @@
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+	padding: 3rem;
 }
 
 .swiper-pagination-bullet {
@@ -67,4 +68,24 @@
 
 .swiper-pagination-bullet-active {
 	background: #007aff;
+}
+@media screen and (max-width: 900px) {
+	.carousel-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.carousel-section {
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-slide img {
+		object-fit: cover;
+		padding: 0;
+	}
+	.carousel-img {
+		height: 58vh;
+	}
 }
