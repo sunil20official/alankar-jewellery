@@ -5,9 +5,9 @@
   height: 100px;
 }
 
-.burger-menu-container{
-    display: none;
-  }
+.burger-menu-container {
+  display: none;
+}
 
 .container-div > ul {
   display: flex;
@@ -16,10 +16,11 @@
 
 .container-div > h1 {
   font-size: 2rem;
-  font-family: SemiBoldCaslon;
+  font-family: RegularCaslon;
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 4px;
+  color: #fff;
 }
 
 .container-div > ul > li {
@@ -50,7 +51,12 @@
   .container-div > ul {
     display: none;
   }
-  .burger-menu-container{
+  .burger-menu-container {
     display: inline;
+    margin-left: 15px;
+  }
+  .container-div > h1 {
+    font-size: 1.25rem;
+    margin: 13px auto 0px;
   }
 }

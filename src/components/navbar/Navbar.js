@@ -4,7 +4,7 @@ import Headroom from "react-headroom";
 const Navbar = () => {
   return (
     <Headroom>
-      <header style={{ background: "#fff" }} className="app-header">
+      <header style={{ background: "#070322" }} className="app-header">
         <nav className="nav-header">
           <div className="container-div">
             <div className="burger-menu-container">
