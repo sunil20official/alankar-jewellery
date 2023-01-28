@@ -32,7 +32,7 @@ const Carousel = () => {
 	return (
 		<div>
 			<div className='carousel-container'>
-				<div className='carousel-section'>
+				<div className='carousel-section' style={{ backgroundColor: '#A0753E' }}>
 					<Swiper
 						// spaceBetween={50}
 						// slidesPerView={3}
