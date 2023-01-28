@@ -1,26 +1,15 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import "./Navbar.css";
 const Navbar = () => {
   const [open, setOpen] = useState(true)
   
   const clickOnBurger = () => {
     setOpen(!open)
-    if (
-      document
-        .getElementById("hamburger")
-        .classList.contains("burger-menu-container")
-    ) {
-      // ----- when navbar is open or hambergur is cross
-      document
-        .getElementById("hamburger")
-        .classList.remove("burger-menu-container");
-      document.getElementById("nav-bottom-links").style.display = "none";
-      document.getElementById("logo-bg-line-cont").style.display = "none";
-      document.getElementById("navbar-heading").style.fontSize = "1.5rem";
-      document.getElementById("navbar-heading").style.marginTop = "20px";
-    }
-    else {
-      // ----- when navbar is closed icon is hamburger
+  }
+
+  useEffect(() => {
+    console.log('useEffect open state value', open)
+    if (open) {
       document
         .getElementById("hamburger")
         .classList.add("burger-menu-container");
@@ -29,11 +18,20 @@ const Navbar = () => {
       document.getElementById("navbar-heading").style.fontSize = "2rem";
       document.getElementById("navbar-heading").style.marginTop = "60px";
     }
-  }
+    else {
+      document
+        .getElementById("hamburger")
+        .classList.remove("burger-menu-container");
+      document.getElementById("nav-bottom-links").style.display = "none";
+      document.getElementById("logo-bg-line-cont").style.display = "none";
+      document.getElementById("navbar-heading").style.fontSize = "1.5rem";
+      document.getElementById("navbar-heading").style.marginTop = "20px";
+    }
+  },[open])
 
   return (
     <>
-      {console.log("this is the state of the nav", open)}
+      {console.log("render state value", open)}
       <header id="app-header" className="app-header">
         <nav className="nav-header">
           <div className="container-div">
