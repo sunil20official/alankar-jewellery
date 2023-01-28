@@ -20,8 +20,30 @@
   min-width: 200px;
 }
 
+.ham-burger-menu > svg > path{
+  transition: all ease-in-out 450ms;
+}
+
+.burger-menu-container > svg > path:nth-child(1){
+  transform:rotate(-45deg) ;
+  -webkit-transform-origin: 6px 22px;
+    -ms-transform-origin: 6px 22px;
+    transform-origin: 6px 22px;
+}
+
+.burger-menu-container > svg > path:nth-child(2){
+  opacity: 0;
+}
+
+.burger-menu-container > svg > path:nth-child(3){
+  transform: rotate(45deg);
+      -webkit-transform-origin: 4px 9px;
+    -ms-transform-origin: 4px 9px;
+    transform-origin: 4px 9px;
+}
+
 .navbar-heading {
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 10px;
   margin-top: 20px;
   font-family: RegularCaslon;

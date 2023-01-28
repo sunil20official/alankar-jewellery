@@ -36,19 +36,20 @@
           document.body.scrollTop > 30 ||
           document.documentElement.scrollTop > 30
         ) {
-          // document.getElementById("navbar").style.padding = "30px 10px";
+          document
+        .getElementById("hamburger")
+        .classList.remove("burger-menu-container");
           document.getElementById("nav-bottom-links").style.display = "none";
           document.getElementById("logo-bg-line-cont").style.display = "none";
-          document.getElementById("navbar-heading").style.fontSize = "1rem";
+          document.getElementById("navbar-heading").style.fontSize = "1.5rem";
           document.getElementById("navbar-heading").style.marginTop = "20px";
-          console.log('inside if condition')
         } else {
-          // document.getElementById("navbar").style.padding = "80px 10px";
-          // document.getElementById("logo").style.fontSize = "35px";
-          console.log('inside else condition')
+          document
+        .getElementById("hamburger")
+        .classList.add("burger-menu-container");
           document.getElementById("nav-bottom-links").style.display = "block";
           document.getElementById("logo-bg-line-cont").style.display = "block";
-          document.getElementById("navbar-heading").style.fontSize = "1.8rem";
+          document.getElementById("navbar-heading").style.fontSize = "2rem";
           document.getElementById("navbar-heading").style.marginTop = "60px";
         }
       }
