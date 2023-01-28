@@ -6,6 +6,36 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "BoldCaslon";   /*Can be any text*/
+  src: local("ACaslonPro-Bold"),
+    url("./fonts/ACaslonPro-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "BoldItalicCaslon";   /*Can be any text*/
+  src: local("ACaslonPro-BoldItalic"),
+    url("./fonts/ACaslonPro-BoldItalic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ItalicCaslon";   /*Can be any text*/
+  src: local("ACaslonPro-Italic"),
+    url("./fonts/ACaslonPro-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "RegularCaslon";   /*Can be any text*/
+  src: local("ACaslonPro-Regular"),
+    url("./fonts/ACaslonPro-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "SemiBoldCaslon";   /*Can be any text*/
+  src: local("ACaslonPro-Semibold"),
+    url("./fonts/ACaslonPro-Semibold.otf") format("truetype");
+}
+
 ::-webkit-scrollbar {
 	display: none;
 }
