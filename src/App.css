@@ -35,8 +35,13 @@
     url("./fonts/ACaslonPro-Semibold.otf") format("truetype");
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none;
+} */
+
+ul{
+  list-style: none;
+  margin: 0;
 }
 
 

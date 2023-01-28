@@ -4,7 +4,7 @@ import Navbar from './components/navbar/Navbar';
 
 function App() {
 	return (
-    <div className="App">
+    <div style={{minHeight:"400vh"}} className="App">
       <Navbar />			
       <HeroSection />
     </div>
