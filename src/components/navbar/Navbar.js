@@ -1,13 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 const Navbar = () => {
+  const [open, setOpen] = useState(true)
+  
+  const clickOnBurger = () => {
+    setOpen(!open)
+    if (
+      document
+        .getElementById("hamburger")
+        .classList.contains("burger-menu-container")
+    ) {
+      // ----- when navbar is open or hambergur is cross
+      document
+        .getElementById("hamburger")
+        .classList.remove("burger-menu-container");
+      document.getElementById("nav-bottom-links").style.display = "none";
+      document.getElementById("logo-bg-line-cont").style.display = "none";
+      document.getElementById("navbar-heading").style.fontSize = "1.5rem";
+      document.getElementById("navbar-heading").style.marginTop = "20px";
+    }
+    else {
+      // ----- when navbar is closed icon is hamburger
+      document
+        .getElementById("hamburger")
+        .classList.add("burger-menu-container");
+      document.getElementById("nav-bottom-links").style.display = "block";
+      document.getElementById("logo-bg-line-cont").style.display = "block";
+      document.getElementById("navbar-heading").style.fontSize = "2rem";
+      document.getElementById("navbar-heading").style.marginTop = "60px";
+    }
+  }
+
   return (
     <>
+      {console.log("this is the state of the nav", open)}
       <header id="app-header" className="app-header">
         <nav className="nav-header">
           <div className="container-div">
             <ul>
-              <li>
+              <li
+                id="hamburger"
+                className={
+                  "ham-burger-menu " + (open && "burger-menu-container")
+                }
+                onClick={() => clickOnBurger()}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -20,6 +57,7 @@ const Navbar = () => {
 	                    c-0.1-0.2-0.2-0.6-0.2-0.8c0-0.2-0.4-0.2-0.4,0c0,0.1,0,2,0,2l0,0c0,0,0,1.9,0,2s0.4,0.2,0.4,0s0-0.6,0.2-0.8
 	                    c0.1-0.3,0.5-0.4,0.7-0.4h23.5c0.2,0,0.6,0.1,0.7,0.4c0.1,0.2,0.2,0.6,0.2,0.8c0,0.2,0.4,0.2,0.4,0C28,24.2,28,22.3,28,22.3L28,22.3
 	                    z"
+                    transform="rotate(45deg)"
                   ></path>
                   <path
                     d="M28,15.2c0,0,0-1.9,0-2s-0.4-0.2-0.4,0s0,0.6-0.2,0.8c-0.1,0.3-0.5,0.4-0.7,0.4H3.3c-0.2,0-0.6-0.1-0.7-0.4
@@ -50,7 +88,9 @@ const Navbar = () => {
                 </svg>
               </li>
             </ul>
-            <h1 id="navbar-heading" className="navbar-heading">alankar</h1>
+            <h1 id="navbar-heading" className="navbar-heading">
+              alankar
+            </h1>
             <ul>
               <li>
                 <svg
