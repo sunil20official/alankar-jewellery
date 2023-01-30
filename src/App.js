@@ -5,7 +5,7 @@ import Carousel from './components/carousel/Carousel.jsx';
 import OurCreations from './components/ourcreations/OurCreations';
 import Footer from './components/footer/Footer.jsx';
 import About from './pages/aboutus/About';
-import Watch from './pages/watches/Watch';
+
 
 function App() {
 	return (
@@ -16,7 +16,7 @@ function App() {
 			<Carousel />
 			<OurCreations />
 			<Footer />
-			<Watch />
+			
 		</div>
 	);
 }
