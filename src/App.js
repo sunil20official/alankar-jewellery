@@ -4,15 +4,19 @@ import Navbar from './components/navbar/Navbar';
 import Carousel from './components/carousel/Carousel.jsx';
 import OurCreations from './components/ourcreations/OurCreations';
 import Footer from './components/footer/Footer.jsx';
+import About from './pages/aboutus/About';
+import Watch from './pages/watches/Watch';
 
 function App() {
 	return (
-		<div style={{}} className='App'>
+		<div style={{ minHeight: '400vh' }} className='App'>
 			<Navbar />
+			<About />
 			<HeroSection />
 			<Carousel />
 			<OurCreations />
 			<Footer />
+			<Watch />
 		</div>
 	);
 }
