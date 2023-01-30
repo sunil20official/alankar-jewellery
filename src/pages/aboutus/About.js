@@ -1,6 +1,7 @@
 import React from 'react';
 import HeadingComponent from '../../components/shared/headingcomponent/HeadingComponent';
 import './About.css';
+import TimeLine from './TimeLine';
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
         paragraph={'A timeline of the key moments and milestones that make up the House incredible legacy.'}
         marginTop={'50px'}
       />
+      <TimeLine/>
     </>
   )
 }
