@@ -1,6 +1,7 @@
 .app-header {
   background: rgb(7, 3, 34);
   position: fixed;
+  top: 0px;
   width: 100%;
   z-index: 9999;
 }

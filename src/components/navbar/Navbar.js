@@ -8,7 +8,6 @@ const Navbar = () => {
   }
 
   useEffect(() => {
-    console.log('useEffect open state value', open)
     if (open) {
       document
         .getElementById("hamburger")
@@ -31,7 +30,6 @@ const Navbar = () => {
 
   return (
     <>
-      {console.log("render state value", open)}
       <header id="app-header" className="app-header">
         <nav className="nav-header">
           <div className="container-div">
