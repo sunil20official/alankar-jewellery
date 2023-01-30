@@ -1,0 +1,9 @@
+.container-fluid {
+	background: #040e28 !important;
+	color: white;
+}
+
+.footer-h5 {
+	color: white;
+	text-transform: uppercase;
+}
