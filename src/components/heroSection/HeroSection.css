@@ -1,9 +1,11 @@
 .heroSection_main {
+	position: relative;
 	width: 100%;
 	height: 100vh;
 }
 
 video {
+	position: relative;
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
@@ -12,11 +14,12 @@ video {
 .heroSection_content {
 	position: absolute;
 	height: 100vh;
-	left: 25%;
+	left: 60%;
 	top: 0;
 	display: flex;
 	flex-direction: column;
 	color: aliceblue;
 	justify-content: center;
 	align-items: center;
+	font-family: 'RegularCaslon';
 }

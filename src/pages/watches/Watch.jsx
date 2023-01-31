@@ -3,11 +3,13 @@ import './Watch.css';
 import HeadingComponent from '../../components/shared/headingcomponent/HeadingComponent';
 
 import image1 from '../../assets/watchs/herolarged_avenue_collection.avif';
+import image2 from '../../assets/creationsImage/Watch2.jpg'
+import image3 from '../../assets/creationsImage/Watch1.jpg'
 
 const Watch = () => {
 	return (
 		<div className='watch-section-container'>
-			<div className='container-fluid'>
+			<div className='container-top'>
 				<img src={image1} style={{ height: '100vh', width: '100%' }} alt='' />
 			</div>
 			<div className='div'>
@@ -22,10 +24,13 @@ const Watch = () => {
 					marginTop={''}
 				/>
 			</div>
-			<div className='div'></div>
+			<div className='container d-flex gap-4'>
+				<div className='card w-50'><img src={image2} alt="" /></div>
+				<div className='card w-50'><img src={image3} alt="" /></div>
+			</div>
 			<div className='div'></div>
 		</div>
-	)
+	);
 };
 
 export default Watch;

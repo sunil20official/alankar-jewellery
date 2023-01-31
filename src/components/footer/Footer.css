@@ -6,4 +6,9 @@
 .footer-h5 {
 	color: white;
 	text-transform: uppercase;
+	font-family: 'RegularCaslon';
+}
+
+.nav .nav-item a {
+	font-family: 'SemiBoldCaslon';
 }
