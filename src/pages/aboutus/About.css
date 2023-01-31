@@ -214,18 +214,4 @@
     width: 100%;
     margin: auto;
   }
-  .year-list-container::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  .year-list-container::-webkit-scrollbar-track {
-    width: 5px;
-    border-radius: 10px;
-  }
-
-  .year-list-container::-webkit-scrollbar-thumb {
-    width: 3px;
-    border-radius: 10px;
-    -webkit-box-shadow: none;
-  }
 }
