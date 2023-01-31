@@ -80,6 +80,7 @@
 
 .offcanvas-start {
   height: 100vh;
+  width: 100%;
 }
 
 .logo-bg-line-cont {
@@ -205,9 +206,12 @@
     display: block;
     font-size: 1rem;
     letter-spacing: normal;
-    line-height: 0.94;
-    margin-right: 2.1875rem;
+    line-height: 1.6;
     padding: 0.875rem 1.25rem;
     font-family: RegularCalson;
+    /* text-align: center; */
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px dashed #070322;
   }
 }

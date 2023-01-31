@@ -193,24 +193,47 @@ const Navbar = () => {
           ></button>
         </div>
         <div class="offcanvas-body">
-          <ul className="mobile_links_container">
+          <ul style={{paddingLeft:"0px"}} className="mobile_links_container">
             <li
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
+              onClick={onClickMobileBurger}
             >
-              The House
+              About Us
             </li>
             <li
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
+              onClick={onClickMobileBurger}
             >
-              The House
+              Our Collection
             </li>
-            <li className="mobile_nav_link">The House</li>
-            <li className="mobile_nav_link">The House</li>
-            <li className="mobile_nav_link">The House</li>
+            <li
+              className="mobile_nav_link"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              onClick={onClickMobileBurger}
+            >
+              Our Legacy
+            </li>
+            <li
+              className="mobile_nav_link"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              onClick={onClickMobileBurger}
+            >
+              Watches
+            </li>
+            <li
+              className="mobile_nav_link"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              onClick={onClickMobileBurger}
+            >
+              Contact us
+            </li>
           </ul>
         </div>
       </div>
