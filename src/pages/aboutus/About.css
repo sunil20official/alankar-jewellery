@@ -152,6 +152,7 @@
   }
   .yr-ul-container {
     overflow-x: scroll;
+    margin:auto;
   }
   .timeline-obj-year {
     font-size: 1.5rem;
@@ -210,6 +211,7 @@
   }
   .yr-ul-container {
     overflow-x: scroll;
+    width: 100%;
   }
   .timeline-obj-img-part {
     width: 100%;

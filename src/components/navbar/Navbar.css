@@ -12,6 +12,7 @@
   align-items: center;
   height: 65px;
   transition: all ease-in-out 350ms;
+  padding: 0px 15px;
 }
 
 .container-div > ul {
@@ -19,28 +20,33 @@
   justify-content: center;
   align-items: center;
   min-width: 200px;
+  padding-left: 0px;
 }
 
-.ham-burger-menu > svg > path{
+#mobile_hamburger {
+  display: none;
+}
+
+.ham-burger-menu > svg > path {
   transition: all ease-in-out 450ms;
 }
 
-.burger-menu-container > svg > path:nth-child(1){
-  transform:rotate(-45deg) ;
+.burger-menu-container > svg > path:nth-child(1) {
+  transform: rotate(-45deg);
   -webkit-transform-origin: 6px 22px;
-    -ms-transform-origin: 6px 22px;
-    transform-origin: 6px 22px;
+  -ms-transform-origin: 6px 22px;
+  transform-origin: 6px 22px;
 }
 
-.burger-menu-container > svg > path:nth-child(2){
+.burger-menu-container > svg > path:nth-child(2) {
   opacity: 0;
 }
 
-.burger-menu-container > svg > path:nth-child(3){
+.burger-menu-container > svg > path:nth-child(3) {
   transform: rotate(45deg);
-      -webkit-transform-origin: 4px 9px;
-    -ms-transform-origin: 4px 9px;
-    transform-origin: 4px 9px;
+  -webkit-transform-origin: 4px 9px;
+  -ms-transform-origin: 4px 9px;
+  transform-origin: 4px 9px;
 }
 
 .navbar-heading {
@@ -167,11 +173,17 @@
     align-items: center;
     height: 60px;
   }
+  .container-div > ul {
+    min-width: 60px;
+  }
   .navbar-heading {
     font-size: 1rem;
     margin: 13px auto 0px;
   }
-  .container-div > ul {
+  #mobile_hamburger {
+    display: block;
+  }
+  #hamburger {
     display: none;
   }
   .burger-menu-container {
