@@ -200,4 +200,14 @@
     font-size: 1rem !important;
     margin-top: 10px !important;
   }
+  .mobile_links_container > li {
+    color: #070322;
+    display: block;
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 0.94;
+    margin-right: 2.1875rem;
+    padding: 0.875rem 1.25rem;
+    font-family: RegularCalson;
+  }
 }

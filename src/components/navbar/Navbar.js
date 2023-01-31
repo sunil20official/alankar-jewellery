@@ -8,6 +8,10 @@ const Navbar = () => {
     setOpen(!open)
   }
 
+  const onClickMobileBurger = () => {
+    document.getElementById("mobile_hamburger").classList.toggle("burger-menu-container");
+  }
+
   useEffect(() => {
     if (open) {
       document
@@ -36,7 +40,14 @@ const Navbar = () => {
           <div className="container-div">
             <ul>
               {/* navbar for mobile and tab */}
-              <li id="mobile_hamburger" className="ham-burger-menu">
+              <li
+                id="mobile_hamburger"
+                className="ham-burger-menu"
+                onClick={onClickMobileBurger}
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -66,7 +77,6 @@ const Navbar = () => {
               {/* menu for desktop only */}
               <li
                 id="hamburger"
-                
                 className={
                   "ham-burger-menu " + (open && "burger-menu-container")
                 }
@@ -183,37 +193,25 @@ const Navbar = () => {
           ></button>
         </div>
         <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc.
-          </div>
-          <div class="dropdown mt-3">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-bs-toggle="dropdown"
+          <ul className="mobile_links_container">
+            <li
+              className="mobile_nav_link"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
             >
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li>
-                <a class="dropdown-item" href="#!">
-                  Action
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#!">
-                  Another action
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#!">
-                  Something else here
-                </a>
-              </li>
-            </ul>
-          </div>
+              The House
+            </li>
+            <li
+              className="mobile_nav_link"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              The House
+            </li>
+            <li className="mobile_nav_link">The House</li>
+            <li className="mobile_nav_link">The House</li>
+            <li className="mobile_nav_link">The House</li>
+          </ul>
         </div>
       </div>
     </>
