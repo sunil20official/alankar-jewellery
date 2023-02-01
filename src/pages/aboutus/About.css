@@ -114,16 +114,14 @@
   font-size: 3rem;
 }
 
-.timeline-obj-year {
-  color: #b5a663;
-  font-family: SemiBoldCaslon;
-  font-size: 1.5rem;
-}
-
 @media screen and (max-width: 900px) {
   .timeline-grid {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .timeline-content {
+    height: 26rem;
   }
 
   .year-list-container {
@@ -154,6 +152,10 @@
   }
   .yr-ul-container {
     overflow-x: scroll;
+    margin:auto;
+  }
+  .timeline-obj-year {
+    font-size: 1.5rem;
   }
   .timeline-obj-img-part {
     width: 40%;
@@ -209,6 +211,7 @@
   }
   .yr-ul-container {
     overflow-x: scroll;
+    width: 100%;
   }
   .timeline-obj-img-part {
     width: 100%;

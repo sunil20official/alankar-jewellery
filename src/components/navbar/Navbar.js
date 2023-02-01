@@ -15,6 +15,12 @@ const Navbar = () => {
 	const navigate = useNavigate();
 	const location = useLocation();
 
+	const onClickMobileBurger = () => {
+		document
+			.getElementById('mobile_hamburger')
+			.classList.toggle('burger-menu-container');
+	};
+
 	useEffect(() => {
 		if (open) {
 			document.getElementById('hamburger').classList.add('burger-menu-container');
@@ -39,6 +45,42 @@ const Navbar = () => {
 				<nav className='nav-header'>
 					<div className='container-div'>
 						<ul>
+							{/* navbar for mobile and tab */}
+							<li
+								id='mobile_hamburger'
+								className='ham-burger-menu'
+								onClick={onClickMobileBurger}
+								data-bs-toggle='offcanvas'
+								data-bs-target='#offcanvasExample'
+								aria-controls='offcanvasExample'
+							>
+								<svg
+									xmlns='http://www.w3.org/2000/svg'
+									width='30'
+									height='30'
+									viewBox='0 0 30 30'
+									fill='#fff'
+								>
+									<path
+										d='M28,22.3c0,0,0-1.9,0-2s-0.4-0.2-0.4,0s0,0.6-0.2,0.8c-0.1,0.3-0.5,0.4-0.7,0.4l0,0H3.3c-0.2,0-0.6-0.1-0.7-0.4
+	                    c-0.1-0.2-0.2-0.6-0.2-0.8c0-0.2-0.4-0.2-0.4,0c0,0.1,0,2,0,2l0,0c0,0,0,1.9,0,2s0.4,0.2,0.4,0s0-0.6,0.2-0.8
+	                    c0.1-0.3,0.5-0.4,0.7-0.4h23.5c0.2,0,0.6,0.1,0.7,0.4c0.1,0.2,0.2,0.6,0.2,0.8c0,0.2,0.4,0.2,0.4,0C28,24.2,28,22.3,28,22.3L28,22.3
+	                    z'
+										transform='rotate(45deg)'
+									></path>
+									<path
+										d='M28,15.2c0,0,0-1.9,0-2s-0.4-0.2-0.4,0s0,0.6-0.2,0.8c-0.1,0.3-0.5,0.4-0.7,0.4H3.3c-0.2,0-0.6-0.1-0.7-0.4
+	                    c-0.1-0.2-0.2-0.6-0.2-0.8C2.4,13,2,13,2,13.2c0,0.1,0,2,0,2l0,0c0,0,0,1.9,0,2s0.4,0.2,0.4,0s0-0.6,0.2-0.8C2.7,16.1,3,16,3.3,16
+	                    h23.5c0.2,0,0.6,0.1,0.7,0.4c0.1,0.2,0.2,0.6,0.2,0.8c0,0.2,0.4,0.2,0.4,0C28,17.1,28,15.2,28,15.2L28,15.2z'
+									></path>
+									<path
+										d='M28,8.1c0,0,0-1.9,0-2s-0.4-0.2-0.4,0s0,0.6-0.2,0.8c-0.1,0.3-0.5,0.3-0.7,0.4H3.3C3,7.3,2.7,7.2,2.5,6.9
+	                     C2.4,6.7,2.4,6.3,2.4,6.1C2.4,6,2,6,2,6.1s0,2,0,2l0,0c0,0,0,1.9,0,2s0.4,0.2,0.4,0s0-0.6,0.2-0.8C2.7,9,3,9,3.3,8.9h23.5
+	                     C27,9,27.3,9,27.5,9.3c0.1,0.2,0.2,0.6,0.2,0.8s0.4,0.2,0.4,0C28,10,28,8.1,28,8.1L28,8.1L28,8.1z'
+									></path>
+								</svg>
+							</li>
+							{/* menu for desktop only */}
 							<li
 								id='hamburger'
 								className={'ham-burger-menu ' + (open && 'burger-menu-container')}
@@ -70,6 +112,8 @@ const Navbar = () => {
 									></path>
 								</svg>
 							</li>
+
+							{/* phone icon */}
 							<li>
 								<svg
 									width='25'
@@ -91,6 +135,7 @@ const Navbar = () => {
 							alankar
 						</h1>
 						<ul>
+							{/* location icon */}
 							<li>
 								<svg
 									width='25'
@@ -123,13 +168,13 @@ const Navbar = () => {
 						</span>
 					</div>
 					<div id='nav-bottom-links' className='nav-bottom-links'>
-						<ul className='text-white'>
+						<ul>
 							<li style={{ textDecoration: 'none', color: '#fff' }}>
 								<Link onClick={() => navigate('/')} to='/'>
 									The Home
 								</Link>
 							</li>
-							<li>High Jewellary</li>
+							<li>High Jewellery</li>
 							<li>Fine Jewellery</li>
 							<li>Engagement & Bridal</li>
 							<li>
@@ -160,37 +205,48 @@ const Navbar = () => {
 					></button>
 				</div>
 				<div class='offcanvas-body'>
-					<div>
-						Some text as placeholder. In real life you can have the elements you have
-						chosen. Like, text, images, lists, etc.
-					</div>
-					<div class='dropdown mt-3'>
-						<button
-							class='btn btn-secondary dropdown-toggle'
-							type='button'
-							id='dropdownMenuButton'
-							data-bs-toggle='dropdown'
+					<ul style={{ paddingLeft: '0px' }} className='mobile_links_container'>
+						<li
+							className='mobile_nav_link'
+							data-bs-dismiss='offcanvas'
+							aria-label='Close'
+							onClick={onClickMobileBurger}
 						>
-							Dropdown button
-						</button>
-						<ul class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
-							<li>
-								<a class='dropdown-item' href='#'>
-									Action
-								</a>
-							</li>
-							<li>
-								<a class='dropdown-item' href='#'>
-									Another action
-								</a>
-							</li>
-							<li>
-								<a class='dropdown-item' href='#'>
-									Something else here
-								</a>
-							</li>
-						</ul>
-					</div>
+							About Us
+						</li>
+						<li
+							className='mobile_nav_link'
+							data-bs-dismiss='offcanvas'
+							aria-label='Close'
+							onClick={onClickMobileBurger}
+						>
+							Our Collection
+						</li>
+						<li
+							className='mobile_nav_link'
+							data-bs-dismiss='offcanvas'
+							aria-label='Close'
+							onClick={onClickMobileBurger}
+						>
+							Our Legacy
+						</li>
+						<li
+							className='mobile_nav_link'
+							data-bs-dismiss='offcanvas'
+							aria-label='Close'
+							onClick={onClickMobileBurger}
+						>
+							Watches
+						</li>
+						<li
+							className='mobile_nav_link'
+							data-bs-dismiss='offcanvas'
+							aria-label='Close'
+							onClick={onClickMobileBurger}
+						>
+							Contact us
+						</li>
+					</ul>
 				</div>
 			</div>
 		</>
