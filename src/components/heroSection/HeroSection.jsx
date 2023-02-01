@@ -7,7 +7,7 @@ const HeroSection = () => {
 		<div className='heroSection_main'>
 			<video src={VideoBg} autoPlay loop muted></video>
 			<div className='heroSection_content'>
-				<h1>Alankar Jewellary</h1>
+				<h1>Alankar Jewellars</h1>
 				<p>It will be Your Lucky One</p>
 			</div>
 		</div>
