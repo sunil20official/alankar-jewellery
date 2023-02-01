@@ -1,136 +1,150 @@
 import React from 'react';
 import './Footer.css';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Footer = () => {
 	return (
-		<div className='container-fluid'>
-			<footer class='p-5'>
-				<div class='row'>
-					<div class='col-6 col-md-3 mb-3'>
-						<h5 className='footer-h5'>serives</h5>
-						<ul class='nav flex-column'>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Home
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Features
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Pricing
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									FAQs
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									About
-								</a>
-							</li>
-						</ul>
-					</div>
+		<div style={{ background: '#040e28' }}>
+			<div className='container'>
+				<footer class='p-5'>
+					<div class='row'>
+						<div class='col-md-3 col-6 mb-3'>
+							<h3 className='footer-h3'>serives</h3>
+							<ul class='nav flex-column'>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										Home
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										Features
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										Pricing
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										FAQs
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										About
+									</a>
+								</li>
+							</ul>
+						</div>
 
-					<div class='col-6 col-md-3 mb-3'>
-						<h5 className='footer-h5'>corporate</h5>
-						<ul class='nav flex-column'>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Home
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Features
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Pricing
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									FAQs
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									About
-								</a>
-							</li>
-						</ul>
-					</div>
+						<div class='col-md-3 col-6 mb-3'>
+							<h3 className='footer-h3'>corporate</h3>
+							<ul class='nav flex-column'>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										Home
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										Features
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										Pricing
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										FAQs
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										About
+									</a>
+								</li>
+							</ul>
+						</div>
 
-					<div class='col-6 col-md-3 mb-3'>
-						<h5 className='footer-h5'>legal terms</h5>
-						<ul class='nav flex-column'>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Home
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Features
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Pricing
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									FAQs
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									About
-								</a>
-							</li>
-						</ul>
-					</div>
+						<div class='col-md-3 col-6 mb-3'>
+							<h3 className='footer-h3'>legal terms</h3>
+							<ul class='nav flex-column'>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										Home
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										Features
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										Pricing
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										FAQs
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' class='nav-link p-0'>
+										About
+									</a>
+								</li>
+							</ul>
+						</div>
 
-					<div class='col-6 col-md-3 mb-3'>
-						<h5 className='footer-h5'>follow us</h5>
-						<ul class='nav flex-column'>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Home
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Features
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									Pricing
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									FAQs
-								</a>
-							</li>
-							<li class='nav-item mb-2'>
-								<a href='#' class='nav-link p-0 text-muted'>
-									About
-								</a>
-							</li>
-						</ul>
-					</div>
+						<div class='col-md-3 col-6 mb-3'>
+							<h3 className='footer-h3'>follow us</h3>
+							<ul class='nav'>
+								<li class='nav-item mb-2'>
+									<a
+										href='https://www.facebook.com/alankarpatna'
+										target='_blank'
+										class='nav-link p-0'
+									>
+										<FacebookOutlinedIcon />
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a
+										href='https://instagram.com/alankar_jewellers?igshid=YmMyMTA2M2Y='
+										target='_blank'
+										class='nav-link p-0 social-links'
+									>
+										<InstagramIcon />
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' target='_blank' class='nav-link p-0 social-links'>
+										<TwitterIcon />
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' target='_blank' class='nav-link p-0 social-links'>
+										<YouTubeIcon />
+									</a>
+								</li>
+								<li class='nav-item mb-2'>
+									<a href='#' target='_blank' class='nav-link p-0 social-links'>
+										<WhatsAppIcon />
+									</a>
+								</li>
+							</ul>
+						</div>
 
-					<div class='col-md-6 my-3'>
+						{/* <div class='col-md-6 my-3'>
 						<form>
 							<h5 className='footer-h5'>Subscribe to our newsletter</h5>
 							<p>Monthly digest of what's new and exciting from us.</p>
@@ -153,13 +167,14 @@ const Footer = () => {
 								</button>
 							</div>
 						</form>
+					</div> */}
 					</div>
-				</div>
 
-				<div class='d-flex flex-column flex-sm-row justify-content-between py-4 border-top'>
-					<p>© 2023 Alankar, Inc. All rights reserved.</p>
-				</div>
-			</footer>
+					<div class='d-flex flex-column flex-sm-row justify-content-between py-4 border-top'>
+						<p>© 2023 Alankar, Inc. All rights reserved.</p>
+					</div>
+				</footer>
+			</div>
 		</div>
 	);
 };
