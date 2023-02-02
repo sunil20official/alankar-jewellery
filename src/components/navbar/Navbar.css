@@ -88,7 +88,6 @@
 
 .logo-cont {
   background: #070322;
-  font-size: 50px;
   font-weight: 700;
   padding: 0 10px;
 }
@@ -131,7 +130,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 30px 10px 15px;
+  padding:10px;
 }
 
 .nav-bottom-links > ul > li {

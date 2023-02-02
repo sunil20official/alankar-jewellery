@@ -1,14 +1,30 @@
-.container-fluid {
+.container {
 	background: #040e28 !important;
 	color: white;
 }
 
-.footer-h5 {
+.footer-h3 {
 	color: white;
+	font-size: 15px;
 	text-transform: uppercase;
 	font-family: 'RegularCaslon';
+	letter-spacing: 0.05rem;
+}
+
+.nav .nav-item .social-links {
+	margin-left: 8px;
 }
 
 .nav .nav-item a {
 	font-family: 'SemiBoldCaslon';
+	font-size: 14px;
+	color: #6c757d;
+}
+
+.nav .nav-item .nav-link:hover {
+	color: #fff;
+}
+
+.nav .nav-item .social-links:hover {
+	color: #fff;
 }

@@ -3,8 +3,8 @@ import './Watch.css';
 import HeadingComponent from '../../components/shared/headingcomponent/HeadingComponent';
 
 import image1 from '../../assets/watchs/herolarged_avenue_collection.avif';
-import image2 from '../../assets/creationsImage/Watch2.jpg'
-import image3 from '../../assets/creationsImage/Watch1.jpg'
+import image2 from '../../assets/creationsImage/Watch3.jpg';
+import image3 from '../../assets/watchs/Watch4.jpg';
 
 const Watch = () => {
 	return (
@@ -21,12 +21,48 @@ const Watch = () => {
 					paragraph2={
 						'Enter a world of pure luxury and know-how to explore our exceptional creations.'
 					}
-					marginTop={''}
+					marginTop={'-50px'}
 				/>
 			</div>
-			<div className='container d-flex gap-4'>
-				<div className='card w-50'><img src={image2} alt="" /></div>
-				<div className='card w-50'><img src={image3} alt="" /></div>
+			<div>
+				<div
+					className='container watch-box d-flex gap-4 mb-3'
+					style={{ background: '#fff' }}
+				>
+					<div className='card w-50'>
+						<img src={image2} alt='Watch' />
+						<h3>WATCH RADO</h3>
+					</div>
+					<div className='card w-50'>
+						<img src={image3} alt='' /> <h3>WATCH RADO</h3>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div
+					className='container watch-box d-flex gap-4 mb-3'
+					style={{ background: '#fff' }}
+				>
+					<div className='card w-50'>
+						<img src={image2} alt='Watch' /> <h3>WATCH RADO</h3>
+					</div>
+					<div className='card w-50'>
+						<img src={image3} alt='' /> <h3>WATCH RADO</h3>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div
+					className='container watch-box d-flex gap-4 mb-3'
+					style={{ background: '#fff' }}
+				>
+					<div className='card w-50'>
+						<img src={image2} alt='Watch' /> <h3>WATCH RADO</h3>
+					</div>
+					<div className='card w-50'>
+						<img src={image3} alt='' /> <h3>WATCH RADO</h3>
+					</div>
+				</div>
 			</div>
 			<div className='div'></div>
 		</div>
