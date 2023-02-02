@@ -12,6 +12,8 @@ import Footer from "./components/footer/Footer.jsx";
 import About from "./pages/aboutus/About";
 import Watch from "./pages/watches/Watch";
 import GoTop from "./components/GoTop";
+import Store from "./pages/store/Store";
+import Contactus from "./pages/contactus/Contactus";
 
 function App() {
   const [loading, setLoading] = React.useState(true);
@@ -40,6 +42,8 @@ function App() {
           />
           <Route path="/watches" element={<Watch />} />
           <Route path="/about" element={<About />} />
+          <Route path="/store" element={<Store />} />
+          <Route path="/contactus" element={<Contactus />} />
         </Routes>
 
         <GoTop />

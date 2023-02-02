@@ -1,0 +1,35 @@
+.contact-section-container {
+	padding: 4rem 0;
+}
+
+.contacts-section {
+	background-color: #fff !important;
+}
+
+.card {
+	color: black;
+}
+
+.card h5 {
+	margin: 20px 0;
+}
+
+.flagship-store-section {
+	text-align: left;
+}
+
+.mapouter {
+	position: relative;
+	text-align: right;
+	width: 100%;
+	height: 400px;
+}
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+	width: 100%;
+	height: 400px;
+}
+.gmap_iframe {
+	height: 400px !important;
+}
