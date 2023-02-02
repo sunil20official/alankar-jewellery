@@ -9,6 +9,7 @@ import OurCreations from './components/ourcreations/OurCreations';
 import Footer from './components/footer/Footer.jsx';
 import About from './pages/aboutus/About';
 import Watch from './pages/watches/Watch';
+import Contactus from './pages/contactus/Contactus';
 
 import GoTop from './components/GoTop';
 
@@ -30,6 +31,7 @@ function App() {
 						}
 					/>
 					<Route path='/watches' element={<Watch />} />
+					<Route path='/store' element={<Contactus />} />
 				</Routes>
 
 				<GoTop />

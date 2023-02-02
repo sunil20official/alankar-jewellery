@@ -182,7 +182,11 @@ const Navbar = () => {
 									Watches
 								</Link>
 							</li>
-							<li>Services</li>
+							<li>
+								<Link onClick={() => navigate('/store')} to='/store'>
+									Our Store
+								</Link>
+							</li>
 						</ul>
 					</div>
 				</nav>
