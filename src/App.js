@@ -17,7 +17,7 @@ function App() {
   const [loading, setLoading] = React.useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 900);
+    setTimeout(() => setLoading(false), 1000);
     window.scrollTo(0, 0);
   });
 

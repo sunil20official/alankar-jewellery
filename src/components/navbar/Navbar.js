@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import logo from '../../assets/logo_low.png';
 
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -29,7 +30,8 @@ const Navbar = () => {
       document.getElementById("logo-bg-line-cont").style.display = "block";
       document.getElementById("navbar-heading").style.fontSize = "2rem";
       document.getElementById("navbar-heading").style.marginTop = "60px";
-      document.getElementById("app-header").style.height = "160px";
+      document.getElementById("app-header").style.height = "170px";
+      document.getElementById("navbar_logo").style.height = "100px";
     } else {
       document
         .getElementById("hamburger")
@@ -38,7 +40,8 @@ const Navbar = () => {
       document.getElementById("logo-bg-line-cont").style.display = "none";
       document.getElementById("navbar-heading").style.fontSize = "1.5rem";
       document.getElementById("navbar-heading").style.marginTop = "20px";
-      document.getElementById("app-header").style.height = "65px";
+      document.getElementById("app-header").style.height = "75px";
+      document.getElementById("navbar_logo").style.height = "75px";
     }
   }, [open]);
 
@@ -137,7 +140,7 @@ const Navbar = () => {
               </li>
             </ul>
             <h1 id="navbar-heading" className="navbar-heading">
-              alankar
+              <img id="navbar_logo" src={logo} alt='logo of alankar jewellers'/>
             </h1>
             <ul>
               {/* location icon */}
@@ -164,9 +167,9 @@ const Navbar = () => {
           </div>
           <div id="nav-bottom-links" className="nav-bottom-links">
             <ul>
-              <li>The House</li>
-              <li>High Jewellery</li>
-              <li>Fine Jewellery</li>
+              <li>Our Legacy</li>
+              <li>Our Collection</li>
+              <li>Watches</li>
               <li>Engagement & Bridal</li>
               <li>Watches</li>
               <li>Services</li>
@@ -199,7 +202,7 @@ const Navbar = () => {
               aria-label="Close"
               onClick={onClickMobileBurger}
             >
-              About Us
+              Our Legacy
             </li>
             <li
               className="mobile_nav_link"
@@ -215,7 +218,7 @@ const Navbar = () => {
               aria-label="Close"
               onClick={onClickMobileBurger}
             >
-              Our Legacy
+              Watches
             </li>
             <li
               className="mobile_nav_link"
@@ -223,7 +226,7 @@ const Navbar = () => {
               aria-label="Close"
               onClick={onClickMobileBurger}
             >
-              Watches
+              Our Store
             </li>
             <li
               className="mobile_nav_link"
