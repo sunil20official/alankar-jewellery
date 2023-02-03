@@ -8,7 +8,7 @@ const About = () => {
     <>
       <HeadingComponent heading={'The History of Alankar'}
         paragraph={'A timeline of the key moments and milestones that make up the House incredible legacy.'}
-        marginTop={'50px'}
+        marginTop={'0px'}
       />
       <TimeLine/>
     </>

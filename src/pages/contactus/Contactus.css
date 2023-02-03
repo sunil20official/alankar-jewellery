@@ -21,6 +21,7 @@
 .col-md-8 {
 	padding: 3rem 0 !important;
 }
+
 .mapouter {
 	position: relative;
 	text-align: right;
@@ -35,4 +36,8 @@
 }
 .gmap_iframe {
 	height: 513px !important;
+}
+
+.gmap_iframe {
+	height: 400px !important;
 }

@@ -1,0 +1,38 @@
+.page-top-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+.store-container {
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+.store-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.store-grid > div {
+  border: 1px solid black;
+  height: 275px;
+  aspect-ratio: 1/1;
+  margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .store-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .store-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-top-image {
+    height: 200px;
+    object-fit: cover;
+  }
+}

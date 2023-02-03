@@ -40,7 +40,8 @@ function App() {
 					/>
 					<Route path='/watches' element={<Watch />} />
 					<Route path='/about' element={<About />} />
-					<Route path='/store' element={<Contactus />} />
+					{/* <Route path='/store' element={<Store />} /> */}
+					<Route path='/contactus' element={<Contactus />} />
 				</Routes>
 
 				<GoTop />

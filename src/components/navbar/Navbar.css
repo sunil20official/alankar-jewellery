@@ -1,6 +1,7 @@
 .app-header {
   background: rgb(7, 3, 34);
   width: 100%;
+  position: relative;
   z-index: 9999;
 }
 
@@ -8,7 +9,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 65px;
+  height: 75px;
   transition: all ease-in-out 350ms;
   padding: 0px 15px;
 }
@@ -86,7 +87,7 @@
   width: 100%;
 }
 
-.logo-cont {
+/* .logo-cont {
   background: #070322;
   font-weight: 700;
   padding: 0 10px;
@@ -118,6 +119,12 @@
   width: calc(50% - 20px);
   height: 1px;
   background-color: #766d42;
+} */
+
+#navbar_logo{
+  height: 70px;
+  transition: all ease-in-out 350ms;
+  user-select: none;
 }
 
 .nav-bottom-links {
@@ -126,7 +133,7 @@
 
 .nav-bottom-links > ul {
   max-width: 100%;
-  visibility: visible;
+  visibility: none;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -144,6 +151,7 @@
   text-align: center;
   position: relative;
   cursor: pointer;
+  user-select: none;
 }
 
 .nav-bottom-links > ul > li::after {
@@ -169,7 +177,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 60px;
+    height: 75px;
   }
   .container-div > ul {
     min-width: 60px;

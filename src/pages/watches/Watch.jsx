@@ -11,7 +11,7 @@ const Watch = () => {
 	return (
 		<div className='watch-section-container'>
 			<div className='container-top'>
-				<img src={image1} style={{ height: '100vh', width: '100%' }} alt='' />
+				<img src={image1} style={{width: '100%' }} alt='' />
 			</div>
 			<div className='div'>
 				<HeadingComponent
@@ -22,7 +22,7 @@ const Watch = () => {
 					paragraph2={
 						'Enter a world of pure luxury and know-how to explore our exceptional creations.'
 					}
-					marginTop={'-50px'}
+					marginTop={'0px'}
 				/>
 			</div>
 			<div>
