@@ -11,7 +11,7 @@ const Watch = () => {
 	return (
 		<div className='watch-section-container'>
 			<div className='container-top'>
-				<img src={image1} style={{width: '100%' }} alt='' />
+				<img src={image1} style={{ width: '100%' }} alt='' />
 			</div>
 			<div className='div'>
 				<HeadingComponent

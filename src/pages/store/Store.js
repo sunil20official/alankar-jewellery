@@ -9,7 +9,7 @@ const Store = () => {
       <img
         className='page-top-image'
         style={{width:"100%"}}
-        src={image1} alt='page top '
+        src={image1} alt='page top'
       />
       <HeadingComponent
         heading={"Our Store"}
