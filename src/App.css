@@ -35,6 +35,16 @@
 		url('./fonts/ACaslonPro-Semibold.otf') format('truetype');
 }
 
+.App{
+	transition: all ease-in-out 300ms;
+	animation: animateapp 450ms linear;
+}
+
+@keyframes animateapp {
+  0%   {opacity: 0.3;}
+  100% {opacity: 1;}
+}
+
 ::-webkit-scrollbar {
 	display: none;
 }
