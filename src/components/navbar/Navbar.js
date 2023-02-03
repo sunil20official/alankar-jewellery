@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link, Navigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import logo from "../../assets/logo_low.png";
+import logo from "../../assets/logo_low_white.png";
 import SplashScreen from "../splashscreen/SplashScreen";
 
 import { useNavigate, useLocation } from "react-router-dom";
@@ -57,7 +57,7 @@ const Navbar = () => {
               <li
                 id="mobile_hamburger"
                 className="ham-burger-menu"
-                onClick={() => onClickMobileBurger('')}
+                onClick={() => onClickMobileBurger("")}
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample"
@@ -171,7 +171,10 @@ const Navbar = () => {
           </div>
           <div id="logo-bg-line-cont" className="logo-bg-line-cont">
             <hr
-              style={{ margin: "30px auto 0px", borderTop: "1px solid red" }}
+              style={{
+                margin: "35px auto 0px",
+                borderTop: "1px solid #b5a663",
+              }}
             />
           </div>
           <div id="nav-bottom-links" className="nav-bottom-links">
