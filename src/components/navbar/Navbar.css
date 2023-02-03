@@ -126,7 +126,7 @@
 } */
 
 #navbar_logo{
-  height: 70px;
+  height: 100px;
   transition: all ease-in-out 350ms;
   user-select: none;
 }

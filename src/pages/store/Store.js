@@ -12,7 +12,7 @@ const Store = () => {
         src={image1} alt='page top'
       />
       <HeadingComponent
-        heading={"Our Store"}
+        heading={"Our Collection"}
         paragraph={
           "Through its collections, the House of Alankar reinterprets time in the most elegant way."
         }

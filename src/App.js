@@ -3,8 +3,6 @@ import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
-import { AnimatePresence } from "framer-motion";
-import { motion } from "framer-motion";
 // all components
 import SplashScreen from "./components/splashscreen/SplashScreen";
 import HeroSection from "./components/heroSection/HeroSection";
@@ -32,21 +30,14 @@ function App() {
     <div style={{}} className="App">
       <Router>
         <Navbar />
-        <AnimatePresence>
           <Routes>
             <Route
               path="/"
               element={
                 <>
-                  <motion.div
-                    initial={{ opacity: 0, y: 500 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                  >
-                    {/* <HeroSection /> */}
+                    <HeroSection />
                     <Carousel />
                     <OurCreations />
-                  </motion.div>
                 </>
               }
             />
@@ -55,7 +46,6 @@ function App() {
             <Route path="/store" element={<Store />} />
             <Route path="/contactus" element={<Contactus />} />
           </Routes>
-        </AnimatePresence>
         <GoTop />
         <Footer />
       </Router>

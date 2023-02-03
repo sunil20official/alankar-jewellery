@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import logo from "../../assets/logo_low.png";
 import SplashScreen from "../splashscreen/SplashScreen";
@@ -9,17 +9,18 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const location = useLocation();
   const [open, setOpen] = useState(false);
 
   const clickOnBurger = () => {
     setOpen(!open);
   };
 
-  const onClickMobileBurger = () => {
+  const onClickMobileBurger = (link) => {
     document
       .getElementById("mobile_hamburger")
       .classList.toggle("burger-menu-container");
+    if(link !== '')
+    navigate(`${link}`)
   };
 
   useEffect(() => {
@@ -32,7 +33,7 @@ const Navbar = () => {
       document.getElementById("navbar-heading").style.fontSize = "2rem";
       document.getElementById("navbar-heading").style.marginTop = "60px";
       document.getElementById("app-header").style.height = "170px";
-      document.getElementById("navbar_logo").style.height = "100px";
+      document.getElementById("navbar_logo").style.height = "130px";
     } else {
       document
         .getElementById("hamburger")
@@ -42,7 +43,7 @@ const Navbar = () => {
       document.getElementById("navbar-heading").style.fontSize = "1.5rem";
       document.getElementById("navbar-heading").style.marginTop = "20px";
       document.getElementById("app-header").style.height = "75px";
-      document.getElementById("navbar_logo").style.height = "75px";
+      document.getElementById("navbar_logo").style.height = "100px";
     }
   }, [open]);
 
@@ -56,7 +57,7 @@ const Navbar = () => {
               <li
                 id="mobile_hamburger"
                 className="ham-burger-menu"
-                onClick={onClickMobileBurger}
+                onClick={() => onClickMobileBurger('')}
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample"
@@ -142,6 +143,7 @@ const Navbar = () => {
             </ul>
             <h1 id="navbar-heading" className="navbar-heading">
               <img
+                onClick={() => navigate("/")}
                 id="navbar_logo"
                 src={logo}
                 alt="logo of alankar jewellers"
@@ -168,16 +170,52 @@ const Navbar = () => {
             </ul>
           </div>
           <div id="logo-bg-line-cont" className="logo-bg-line-cont">
-            <hr style={{margin:"30px auto 0px", borderTop:"1px solid red"}} />
+            <hr
+              style={{ margin: "30px auto 0px", borderTop: "1px solid red" }}
+            />
           </div>
           <div id="nav-bottom-links" className="nav-bottom-links">
             <ul>
-              <li>Our Legacy</li>
-              <li>Our Collection</li>
-              <li>Watches</li>
-              <li>Engagement & Bridal</li>
-              <li>Watches</li>
-              <li>Services</li>
+              <li
+                onClick={() => {
+                  setOpen(!open);
+                  navigate("/about");
+                }}
+              >
+                Our Legacy
+              </li>
+              <li
+                onClick={() => {
+                  setOpen(!open);
+                  navigate("/store");
+                }}
+              >
+                Our Collection
+              </li>
+              <li
+                onClick={() => {
+                  setOpen(!open);
+                  navigate("/store");
+                }}
+              >
+                Engagement & Bridal
+              </li>
+              <li
+                onClick={() => {
+                  setOpen(!open);
+                  navigate("/watches");
+                }}
+              >
+                Watches
+              </li>
+              <li
+                onClick={() => {
+                  setOpen(!open);
+                  navigate("/contactus");
+                }}
+              >
+                Our Stores
+              </li>
             </ul>
           </div>
         </nav>
@@ -205,7 +243,7 @@ const Navbar = () => {
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-              onClick={onClickMobileBurger}
+              onClick={() => onClickMobileBurger("/about")}
             >
               Our Legacy
             </li>
@@ -213,7 +251,7 @@ const Navbar = () => {
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-              onClick={onClickMobileBurger}
+              onClick={() => onClickMobileBurger("/store")}
             >
               Our Collection
             </li>
@@ -221,7 +259,15 @@ const Navbar = () => {
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-              onClick={onClickMobileBurger}
+              onClick={() => onClickMobileBurger("/store")}
+            >
+              Engagement & Bridal
+            </li>
+            <li
+              className="mobile_nav_link"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              onClick={() => onClickMobileBurger("/watches")}
             >
               Watches
             </li>
@@ -229,17 +275,9 @@ const Navbar = () => {
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-              onClick={onClickMobileBurger}
+              onClick={() => onClickMobileBurger("/contactus")}
             >
-              Our Store
-            </li>
-            <li
-              className="mobile_nav_link"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-              onClick={onClickMobileBurger}
-            >
-              Contact us
+              Our Stores
             </li>
           </ul>
         </div>

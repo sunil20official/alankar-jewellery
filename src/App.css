@@ -37,7 +37,7 @@
 
 .App{
 	transition: all ease-in-out 300ms;
-	animation: animateapp 450ms linear;
+	animation: animateapp 550ms linear;
 }
 
 @keyframes animateapp {
