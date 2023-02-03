@@ -18,6 +18,10 @@
 	text-align: left;
 }
 
+.col-md-8 {
+	padding: 3rem 0 !important;
+}
+
 .mapouter {
 	position: relative;
 	text-align: right;
@@ -28,8 +32,12 @@
 	overflow: hidden;
 	background: none !important;
 	width: 100%;
-	height: 400px;
+	height: 600px;
 }
+.gmap_iframe {
+	height: 513px !important;
+}
+
 .gmap_iframe {
 	height: 400px !important;
 }

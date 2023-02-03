@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import logo from '../../assets/logo_low.png';
+import logo from "../../assets/logo_low.png";
+import SplashScreen from "../splashscreen/SplashScreen";
 
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -26,8 +27,8 @@ const Navbar = () => {
       document
         .getElementById("hamburger")
         .classList.add("burger-menu-container");
-      document.getElementById("nav-bottom-links").style.display = "block";
-      document.getElementById("logo-bg-line-cont").style.display = "block";
+      document.getElementById("nav-bottom-links").style.opacity = "1";
+      document.getElementById("logo-bg-line-cont").style.transform = "scaleY(1)";
       document.getElementById("navbar-heading").style.fontSize = "2rem";
       document.getElementById("navbar-heading").style.marginTop = "60px";
       document.getElementById("app-header").style.height = "170px";
@@ -36,8 +37,8 @@ const Navbar = () => {
       document
         .getElementById("hamburger")
         .classList.remove("burger-menu-container");
-      document.getElementById("nav-bottom-links").style.display = "none";
-      document.getElementById("logo-bg-line-cont").style.display = "none";
+      document.getElementById("nav-bottom-links").style.opacity = "0";
+      document.getElementById("logo-bg-line-cont").style.transform = "scaleY(0)";
       document.getElementById("navbar-heading").style.fontSize = "1.5rem";
       document.getElementById("navbar-heading").style.marginTop = "20px";
       document.getElementById("app-header").style.height = "75px";
@@ -140,7 +141,11 @@ const Navbar = () => {
               </li>
             </ul>
             <h1 id="navbar-heading" className="navbar-heading">
-              <img id="navbar_logo" src={logo} alt='logo of alankar jewellers'/>
+              <img
+                id="navbar_logo"
+                src={logo}
+                alt="logo of alankar jewellers"
+              />
             </h1>
             <ul>
               {/* location icon */}
@@ -163,7 +168,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div id="logo-bg-line-cont" className="logo-bg-line-cont">
-            <hr/>
+            <hr style={{margin:"30px auto 0px", borderTop:"1px solid red"}} />
           </div>
           <div id="nav-bottom-links" className="nav-bottom-links">
             <ul>

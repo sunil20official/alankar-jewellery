@@ -3,10 +3,6 @@
 	width: '100%';
 } */
 
-.container-top {
-	margin-top: 0rem;
-}
-
 .container-top img {
 	object-fit: contain;
 }

@@ -3,6 +3,7 @@
   width: 100%;
   position: relative;
   z-index: 9999;
+  transition: all ease-in-out 350ms;
 }
 
 .container-div {
@@ -85,6 +86,9 @@
 .logo-bg-line-cont {
   text-align: center;
   width: 100%;
+  transition: all ease-in-out 350ms;
+  transform:scaleY(0);
+  transform-origin: top;
 }
 
 /* .logo-cont {
@@ -129,6 +133,7 @@
 
 .nav-bottom-links {
   transition: all ease-in-out 350ms;
+  opacity: 0;
 }
 
 .nav-bottom-links > ul {
