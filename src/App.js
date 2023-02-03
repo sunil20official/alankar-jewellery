@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
+
 // all components
 import SplashScreen from './components/splashscreen/SplashScreen';
 import HeroSection from './components/heroSection/HeroSection';
