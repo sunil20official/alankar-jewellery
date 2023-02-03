@@ -1,6 +1,7 @@
 import React from 'react';
 import './Watch.css';
 import HeadingComponent from '../../components/shared/headingcomponent/HeadingComponent';
+import ButtonComponent from '../../components/shared/buttonComponent/ButtonComponent';
 
 import image1 from '../../assets/watchs/herolarged_avenue_collection.avif';
 import image2 from '../../assets/creationsImage/Watch3.jpg';
@@ -64,7 +65,9 @@ const Watch = () => {
 					</div>
 				</div>
 			</div>
-			<div className='div'></div>
+			<div className='div'>
+				<ButtonComponent />
+			</div>
 		</div>
 	);
 };

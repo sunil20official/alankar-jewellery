@@ -1,0 +1,16 @@
+.button-comp-container {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.button-comp-content Button {
+	color: white;
+	background: rgb(4, 14, 40);
+	font-family: 'WilliamsCaslonText';
+	padding: 0.8rem 1.5rem;
+	border-radius: 0px;
+}

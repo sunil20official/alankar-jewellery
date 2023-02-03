@@ -57,9 +57,7 @@ const Contactus = () => {
 										marginwidth='0'
 										src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Boring Canal Rd, Sri Krishna Nagar, Buddha Colony, Patna, Bihar 800001&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
 									></iframe>
-									<a href='https://pdflist.com/' alt='pdflist.com'>
-										Pdflist.com
-									</a>
+									<a href='https://pdflist.com/' alt='pdflist.com'></a>
 								</div>
 							</div>
 						</div>
