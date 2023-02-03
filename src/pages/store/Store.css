@@ -15,10 +15,16 @@
 }
 
 .store-grid > div {
-  border: 1px solid black;
+  border: 10px solid #b5a663;
   height: 275px;
   aspect-ratio: 1/1;
   margin: auto;
+  cursor: pointer;
+  transition: all ease-in-out 350ms;
+}
+
+.store-grid > div:hover{
+  transform: scale(1.06);
 }
 
 @media screen and (max-width: 900px) {
