@@ -7,7 +7,10 @@
 }
 
 .card {
-	color: black;
+	color: #fff;
+	background-color: rgb(7, 3, 34);
+	font-family: RegularCalson;
+	border: 3px solid #b5a663 !important;
 }
 
 .card h5 {
@@ -16,6 +19,11 @@
 
 .flagship-store-section {
 	text-align: left;
+}
+
+.flagship-store-section a {
+	text-decoration: none;
+	color: #b5a663;
 }
 
 .col-md-8 {
@@ -38,6 +46,8 @@
 	height: 513px !important;
 }
 
-.gmap_iframe {
-	height: 400px !important;
+@media screen and (max-width: 900px) {
+	.col-md-8 {
+		padding: 3rem 1rem !important;
+	}
 }
