@@ -7,26 +7,39 @@
 	object-fit: contain;
 }
 
-.card {
-	padding: 1rem;
-	text-align: center;
+.watch-container {
+	margin: 2rem auto;
+	max-width: 1100px;
+}
+
+.watch-grid {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
 	object-fit: contain;
-	border: none;
+}
+
+.watch-grid > div {
+	border: 10px solid #b5a663;
+	height: 275px;
+	aspect-ratio: 1/1;
+	margin: auto;
 	cursor: pointer;
+	transition: all ease-in-out 350ms;
 }
 
-.card h3 {
-	color: black;
-	font-family: 'WilliamsCaslonText', 'Arial Narrow', Arial, sans-serif;
-	font-size: 1.25rem;
-	font-weight: 400;
-	margin: 0.625rem auto 1.5625rem;
+.watch-grid > div:hover {
+	transform: scale(1.06);
 }
 
-/* .card:hover {
-	border-bottom: 2px soild red;
-} */
+@media screen and (max-width: 900px) {
+	.watch-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 
-.watch-box {
-	background-color: white !important;
+@media screen and (max-width: 576px) {
+	.watch-grid {
+		grid-template-columns: 1fr;
+	}
 }
