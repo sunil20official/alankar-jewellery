@@ -17,7 +17,7 @@ const Contactus = () => {
           <div style={{maxWidth:"1080px",margin:"0 auto"}} className="row">
             <div className="col-md-4 col-sm-6 mt-5">
               <div className="card vh-50 border">
-                <h5>ALANKAR JEWELLERS</h5>
+                <h5 style={{fontFamily:"RegularCalson"}}>ALANKAR JEWELLERS</h5>
                 <div className="flagship-store-section">
                   <strong>
                     <a href="#">Flagship Store</a>&nbsp;
