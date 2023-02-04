@@ -7,11 +7,16 @@
 }
 
 .card {
-	color: black;
+	color: #fff;
+	background-color: rgb(7, 3, 34);
+	border: 3px solid #b5a663;
+	font-family: 'RegularCaslon';
+	padding: 1rem;
 }
 
 .card h5 {
 	margin: 20px 0;
+	text-align: center;
 }
 
 .flagship-store-section {

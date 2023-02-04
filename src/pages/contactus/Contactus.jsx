@@ -14,9 +14,9 @@ const Contactus = () => {
 					marginTop={'-4rem'}
 				/>
 				<div className='container contacts-section'>
-					<div className='row'>
+					<div className='row' style={{ maxWidth: '1080px', margin: '0 auto' }}>
 						<div className='col-md-4 col-sm-6 mt-5'>
-							<div className='card vh-50 border'>
+							<div className='card vh-50'>
 								<h5>ALANKAR JEWELLERS</h5>
 								<div className='flagship-store-section'>
 									<strong>
