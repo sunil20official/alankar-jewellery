@@ -82,7 +82,7 @@
 
 .timeline-obj-container {
   display: flex;
-  font-family: RegularCalson;
+  font-family: RegularCaslon;
   color: #383838;
 }
 
@@ -163,6 +163,7 @@
   }
   .timeline-obj-heading {
     font-size: 1.2rem;
+    font-family: "RegularCaslon";
   }
   .timeline-obj-text-part > p {
     margin-top: 0.8rem;

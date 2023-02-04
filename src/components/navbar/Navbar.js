@@ -243,6 +243,7 @@ const Navbar = () => {
         <div class="offcanvas-body">
           <ul style={{ paddingLeft: "0px" }} className="mobile_links_container">
             <li
+              style={{ fontFamily: "RegularCaslon" }}
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -251,6 +252,7 @@ const Navbar = () => {
               Our Legacy
             </li>
             <li
+              style={{ fontFamily: "RegularCaslon" }}
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -259,6 +261,7 @@ const Navbar = () => {
               Our Collection
             </li>
             <li
+              style={{ fontFamily: "RegularCaslon" }}
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -267,6 +270,7 @@ const Navbar = () => {
               Engagement & Bridal
             </li>
             <li
+              style={{ fontFamily: "RegularCaslon" }}
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -275,6 +279,7 @@ const Navbar = () => {
               Watches
             </li>
             <li
+              style={{ fontFamily: "RegularCaslon" }}
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
