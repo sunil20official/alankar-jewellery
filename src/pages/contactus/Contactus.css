@@ -18,6 +18,11 @@
 	text-align: left;
 }
 
+.flagship-store-section a {
+	text-decoration: none;
+	color: #b5a663;
+}
+
 .col-md-8 {
 	padding: 3rem 0 !important;
 }
@@ -38,6 +43,8 @@
 	height: 513px !important;
 }
 
-.gmap_iframe {
-	height: 400px !important;
+@media screen and (max-width: 900px) {
+	.col-md-8 {
+		padding: 3rem 1rem !important;
+	}
 }
