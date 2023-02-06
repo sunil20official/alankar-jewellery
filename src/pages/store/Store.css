@@ -3,6 +3,34 @@
   object-fit: cover;
 }
 
+.filter-component-container{
+  margin: 0px auto;
+}
+
+.filter-container{
+  margin: 0px auto;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-item{
+  margin: 0px 10px;
+  padding: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'PT Serif', serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all ease-in-out 350ms;
+}
+
+.active-filter-item{
+  font-weight: bold;
+}
+
 .store-container {
   margin: 2rem auto;
   max-width: 1100px;

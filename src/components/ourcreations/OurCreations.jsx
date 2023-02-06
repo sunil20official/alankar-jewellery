@@ -1,6 +1,7 @@
 import React from 'react';
 import './OurCreations.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import HeadComponent from '../shared/headingcomponent/HeadingComponent';
 
 // Images
 import Image1 from '../../assets/watchs/Watch3.jpg';
@@ -16,10 +17,10 @@ import 'swiper/css';
 const OurCreations = () => {
 	return (
 		<div className='creation-container'>
-			<div className='creation-header-container'>
-				<h1 className='creation-h1'>Our Creations</h1>
-				<p className='creation-p'>Discover a variety of our pieces.</p>
-			</div>
+			<HeadComponent
+				heading={'Our Creations'}
+				paragraph={'Discover a variety of our pieces.'}
+			/>
 			<div className='creation-swiper-container'>
 				<Swiper
 					slidesPerView={3}

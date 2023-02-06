@@ -25,6 +25,7 @@ import Store from "./pages/store/Store";
 import Contactus from "./pages/contactus/Contactus";
 import HomeJewellerySection from "./components/shared/homeJewellerySection/HomeJewellerySection";
 import HomeJewellerySectionReverse from "./components/shared/homeJewellerySection/HomeJewellerySectionReverse";
+import DiscoverCollections from './components/discovercollections/DiscoverCollections';
 
 function App() {
   const [loading, setLoading] = React.useState(true);
@@ -51,7 +52,8 @@ function App() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
                   >
-                    <HeroSection />
+										<HeroSection />
+										<DiscoverCollections />
                     <HomeJewellerySection
                       img_src={img1}
                       heading={"Diamond Jewellery"}

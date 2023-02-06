@@ -67,6 +67,17 @@
 	background: #000;
 }
 
+.swiper-container {
+	position: relative;
+}
+
+/* .on-swiper-button {
+	position: absolute;
+	top: 80%;
+	left: 38%;
+	z-index: 9;
+} */
+
 .swiper-pagination-bullet-active {
 	background: #007aff;
 }
