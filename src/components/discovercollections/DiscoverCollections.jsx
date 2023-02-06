@@ -1,9 +1,13 @@
 import React from 'react';
+import './DiscoverCollection.css';
 import Image2 from '../../assets/creationsImage/EarPiece.jpg';
 import Image1 from '../../assets/creationsImage/PNeckLace.jpg';
 import Image3 from '../../assets/creationsImage/Bangal.jpg';
+import { Link, useNavigate } from 'react-router-dom';
+// import ButtonComponent from '../shared/buttonComponent/ButtonComponent';
 
 const DiscoverCollections = () => {
+	const navigate = useNavigate();
 	return (
 		<div>
 			<div class='album py-3 bg-light'>
@@ -38,6 +42,14 @@ const DiscoverCollections = () => {
 							</div>
 						</div>
 					</div>
+				</div>
+				<div className='d-flex justify-content-center'>
+					<button
+						onClick={() => navigate('/store')}
+						className='home-discover-more-bttn'
+					>
+						Discover More
+					</button>
 				</div>
 			</div>
 		</div>
