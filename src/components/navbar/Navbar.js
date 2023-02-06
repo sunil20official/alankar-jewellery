@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { Link, Navigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import logo from "../../assets/logo_low_white.png";
-import SplashScreen from "../splashscreen/SplashScreen";
 
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -32,7 +30,7 @@ const Navbar = () => {
       document.getElementById("logo-bg-line-cont").style.transform = "scaleY(1)";
       document.getElementById("navbar-heading").style.fontSize = "2rem";
       document.getElementById("navbar-heading").style.marginTop = "60px";
-      document.getElementById("app-header").style.height = "170px";
+      document.getElementById("app-header").style.height = "200px";
       document.getElementById("navbar_logo").style.height = "130px";
     } else {
       document
@@ -42,8 +40,8 @@ const Navbar = () => {
       document.getElementById("logo-bg-line-cont").style.transform = "scaleY(0)";
       document.getElementById("navbar-heading").style.fontSize = "1.5rem";
       document.getElementById("navbar-heading").style.marginTop = "20px";
-      document.getElementById("app-header").style.height = "75px";
-      document.getElementById("navbar_logo").style.height = "100px";
+      document.getElementById("app-header").style.height = "100px";
+      document.getElementById("navbar_logo").style.height = "120px";
     }
   }, [open]);
 
@@ -124,7 +122,7 @@ const Navbar = () => {
               </li>
 
               {/* phone icon */}
-              <li>
+              {/* <li>
                 <svg
                   width="25"
                   height="25"
@@ -139,7 +137,7 @@ const Navbar = () => {
                     fill="#fff"
                   />
                 </svg>
-              </li>
+              </li> */}
             </ul>
             <h1 id="navbar-heading" className="navbar-heading">
               <img
