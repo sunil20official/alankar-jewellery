@@ -23,3 +23,15 @@ video {
 	align-items: center;
 	font-family: 'RegularCaslon';
 }
+
+@media screen and (max-width: 900px) {
+	video {
+		width: 300%;
+	}
+	.heroSection_content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		left: 25%;
+	}
+}

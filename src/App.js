@@ -6,6 +6,11 @@ import { Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
 
+// home jewellery component images
+import img1 from './assets/homepage1.png';
+import img2 from './assets/homepage2.png';
+import img3 from './assets/homepage3.png';
+
 // all components
 import SplashScreen from './components/splashscreen/SplashScreen';
 import HeroSection from './components/heroSection/HeroSection';
@@ -18,6 +23,8 @@ import Watch from './pages/watches/Watch';
 import GoTop from './components/GoTop';
 import Store from './pages/store/Store';
 import Contactus from './pages/contactus/Contactus';
+import HomeJewellerySection from './components/shared/homeJewellerySection/HomeJewellerySection';
+import HomeJewellerySectionReverse from './components/shared/homeJewellerySection/HomeJewellerySectionReverse';
 import DiscoverCollections from './components/discovercollections/DiscoverCollections';
 
 function App() {
@@ -47,8 +54,33 @@ function App() {
 									>
 										<HeroSection />
 										<DiscoverCollections />
+										<HomeJewellerySection
+											img_src={img1}
+											heading={'Diamond Jewellery'}
+											paragraph={
+												'Gift your special moments the brilliant sparkle and charm of eternity with prudently crafted diamond necklaces, earrings, and bangles from Hazoorilal jewellers.'
+											}
+											link={'/store'}
+										/>
+										<HomeJewellerySectionReverse
+											img_src={img2}
+											heading={'Gold Jewellery'}
+											paragraph={
+												'Whether it is one of those important occasions in our life or just ordinary moments, gold jewellery collection from Hazoorilal jewellers makes for the most popular choice.'
+											}
+											link={'/store'}
+										/>
+										<HomeJewellerySection
+											img_src={img3}
+											heading={'Polki Jewellery'}
+											paragraph={
+												'Intricately crafted Polki jewellery from Hazoorilal jewellers, with natural uncut diamonds arranged in a beautiful tapestry, is indeed what you should be looking forward to in order to feel special.'
+											}
+											link={'/store'}
+										/>
+
 										<Carousel />
-										<OurCreations />
+										{/* <OurCreations /> */}
 									</motion.div>
 								</>
 							}

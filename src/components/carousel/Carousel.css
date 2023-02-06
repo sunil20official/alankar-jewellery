@@ -81,6 +81,7 @@
 .swiper-pagination-bullet-active {
 	background: #007aff;
 }
+
 @media screen and (max-width: 900px) {
 	.carousel-container {
 		display: flex;
@@ -98,6 +99,10 @@
 		padding: 0;
 	}
 	.carousel-img {
-		height: 58vh;
+		height: 46vh;
+		width: auto;
+	}
+	.carousel-left-Image {
+		height: auto;
 	}
 }
