@@ -16,7 +16,9 @@
 
 .heading-comp-h1 {
   color: #383838;
-  font-family: RegularCaslon;
+  font-family: "PT Serif", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .heading-comp-line {
@@ -33,7 +35,7 @@
   font-size: 15px !important;
   text-align: center;
   color: #656565;
-  font-family: RegularCaslon;
+  font-family: "PT Serif", serif;
   margin-bottom: 0px;
   letter-spacing: 0.5px;
 }

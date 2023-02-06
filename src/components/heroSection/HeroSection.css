@@ -21,7 +21,7 @@ video {
 	color: aliceblue;
 	justify-content: center;
 	align-items: center;
-	font-family: 'RegularCaslon';
+	font-family: "PT Serif", serif;
 }
 
 @media screen and (max-width: 900px) {

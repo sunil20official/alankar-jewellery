@@ -126,16 +126,7 @@ const Footer = () => {
 										<InstagramIcon />
 									</a>
 								</li>
-								{/* <li class="nav-item mb-2">
-                  <a href="#" target="_blank" class="nav-link p-0 social-links">
-                    <TwitterIcon />
-                  </a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" target="_blank" class="nav-link p-0 social-links">
-                    <YouTubeIcon />
-                  </a>
-                </li> */}
+
 								<li class='nav-item mb-2'>
 									<a href='#' target='_blank' class='nav-link p-0 social-links'>
 										<WhatsAppIcon />
@@ -143,31 +134,6 @@ const Footer = () => {
 								</li>
 							</ul>
 						</div>
-
-						{/* <div class='col-md-6 my-3'>
-						<form>
-							<h5 className='footer-h5'>Subscribe to our newsletter</h5>
-							<p>Monthly digest of what's new and exciting from us.</p>
-							<div class='d-flex flex-column flex-sm-row w-100 gap-2'>
-								<label for='newsletter1' class='visually-hidden'>
-									Email address
-								</label>
-								<input
-									id='newsletter1'
-									type='text'
-									class='form-control'
-									placeholder='Email address'
-								/>
-								<button
-									class='btn btn-primary'
-									type='button'
-									style={{ background: '#040e28' }}
-								>
-									Subscribe
-								</button>
-							</div>
-						</form>
-					</div> */}
 					</div>
 
 					<div class='d-flex flex-column flex-sm-row justify-content-between py-4 border-top'>
