@@ -106,7 +106,15 @@ const Store = () => {
           >
             Earrings
           </div>
-          <div className="filter-item" onClick={() => setCurrCollection(rings)}>
+          <div
+            className={
+              "filter-item " + (currFilter === "rings" && "active-filter-item")
+            }
+            onClick={() => {
+              setCurrCollection(rings);
+              setCurrFilter("rings");
+            }}
+          >
             Rings
           </div>
         </div>
@@ -114,14 +122,18 @@ const Store = () => {
       <div className="store-container">
         <div className="store-grid">
           {currCollection.map((item) => (
-            <div className="item-container">
-              <LazyLoadImage
-                style={{ width: "100%" }}
-                src={item}
-                effect="blur"
-                alt="collection of pics from alankar store"
-              />
-            </div>
+           
+              <div
+                className="item-container"
+              >
+                <LazyLoadImage
+                  style={{ width: "100%" }}
+                  src={item}
+                  effect="blur"
+                  alt="collection of pics from alankar store"
+                />
+              </div>
+           
           ))}
         </div>
       </div>
