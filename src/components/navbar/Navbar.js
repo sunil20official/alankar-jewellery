@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import logo from "../../assets/logo_low_white.png";
 
 import { useNavigate } from "react-router-dom";
