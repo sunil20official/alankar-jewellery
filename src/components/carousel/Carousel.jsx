@@ -3,6 +3,8 @@ import './Carousel.css';
 import image1 from '../../assets/Caruosel/Image1.jpg';
 import { Pagination } from 'swiper';
 
+import ButtonComponent from '../shared/buttonComponent/ButtonComponent';
+
 // images
 import Slide1 from '../../assets/Caruosel/GoldNeckLace.jpg';
 import Slide2 from '../../assets/Caruosel/GoldNeckLace2.jpg';
@@ -24,7 +26,7 @@ import 'swiper/css/bundle';
 const pagination = {
 	clickable: true,
 	renderBullet: function (index, className) {
-		return '<span class="' + className + '">' + (index + 1) + '</span>';
+		return '<span class="' + className + '">' + '</span>';
 	},
 };
 
@@ -42,7 +44,7 @@ const Carousel = () => {
 						modules={[Pagination]}
 						className='mySwiper'
 					>
-						<div>
+						<div className='swiper-container'>
 							<SwiperSlide style={{ background: '#fff' }}>
 								<img src={Slide1} alt='CaruoselImage' />
 							</SwiperSlide>
@@ -68,6 +70,9 @@ const Carousel = () => {
 								<img src={Slide8} alt='CaruoselImage' />
 							</SwiperSlide>
 						</div>
+						{/* <div className='on-swiper-button'>
+							<ButtonComponent />
+						</div> */}
 					</Swiper>
 				</div>
 				<div className='carousel-left-Image'>

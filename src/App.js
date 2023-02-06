@@ -18,6 +18,7 @@ import Watch from './pages/watches/Watch';
 import GoTop from './components/GoTop';
 import Store from './pages/store/Store';
 import Contactus from './pages/contactus/Contactus';
+import DiscoverCollections from './components/discovercollections/DiscoverCollections';
 
 function App() {
 	const [loading, setLoading] = React.useState(true);
@@ -45,6 +46,7 @@ function App() {
 										exit={{ opacity: 0 }}
 									>
 										<HeroSection />
+										<DiscoverCollections />
 										<Carousel />
 										<OurCreations />
 									</motion.div>
