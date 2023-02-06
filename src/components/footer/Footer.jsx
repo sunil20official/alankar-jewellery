@@ -175,7 +175,6 @@ const Footer = () => {
               style={{
                 fontSize: "14px",
                 letterSpacing: "1px",
-								fontFamily: "RegularCaslon",
 								marginBotttom:"0px"
               }}
             >

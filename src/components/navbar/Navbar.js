@@ -26,6 +26,7 @@ const Navbar = () => {
         .getElementById("hamburger")
         .classList.add("burger-menu-container");
       document.getElementById("nav-bottom-links").style.opacity = "1";
+      document.getElementById("nav-bottom-links").style.zIndex = "99";
       document.getElementById("logo-bg-line-cont").style.transform = "scaleY(1)";
       document.getElementById("navbar-heading").style.fontSize = "2rem";
       document.getElementById("navbar-heading").style.marginTop = "60px";
@@ -36,6 +37,7 @@ const Navbar = () => {
         .getElementById("hamburger")
         .classList.remove("burger-menu-container");
       document.getElementById("nav-bottom-links").style.opacity = "0";
+      document.getElementById("nav-bottom-links").style.zIndex = "-9";
       document.getElementById("logo-bg-line-cont").style.transform = "scaleY(0)";
       document.getElementById("navbar-heading").style.fontSize = "1.5rem";
       document.getElementById("navbar-heading").style.marginTop = "20px";
@@ -240,7 +242,7 @@ const Navbar = () => {
         <div class="offcanvas-body">
           <ul style={{ paddingLeft: "0px" }} className="mobile_links_container">
             <li
-              style={{ fontFamily: "RegularCaslon" }}
+              
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -249,7 +251,6 @@ const Navbar = () => {
               Our Legacy
             </li>
             <li
-              style={{ fontFamily: "RegularCaslon" }}
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -258,7 +259,7 @@ const Navbar = () => {
               Our Collection
             </li>
             <li
-              style={{ fontFamily: "RegularCaslon" }}
+              
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -267,7 +268,7 @@ const Navbar = () => {
               Engagement & Bridal
             </li>
             <li
-              style={{ fontFamily: "RegularCaslon" }}
+              
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -276,7 +277,7 @@ const Navbar = () => {
               Watches
             </li>
             <li
-              style={{ fontFamily: "RegularCaslon" }}
+              
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
