@@ -53,17 +53,7 @@ function App() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
                   >
-                    {/* <HeroSection /> */}
-                    <video
-                      src={VideoBg}
-                      preload="auto"
-                      typeof="video/mp4"
-                      autoPlay
-                      loop
-                      muted
-                      playsinline
-                      alt="background video for herosection"
-                    ></video>
+                    <HeroSection />
                     <DiscoverCollections />
                     <HomeJewellerySection
                       img_src={img1}
