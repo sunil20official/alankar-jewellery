@@ -15,10 +15,10 @@ const HeroSection = () => {
         playsinline
         alt="background video for herosection"
       ></video>
-      <div className="heroSection_content">
+      {/* <div className="heroSection_content">
         <h1>Alankar Jewellars</h1>
         <p>It will be Your Lucky One</p>
-      </div>
+      </div> */}
     </div>
   );
 };
