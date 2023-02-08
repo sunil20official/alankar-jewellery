@@ -197,7 +197,7 @@ const Navbar = () => {
               <li
                 onClick={() => {
                   setOpen(!open);
-                  navigate("/store");
+                  navigate("/engagementandbridal");
                 }}
               >
                 Engagement & Bridal

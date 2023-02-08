@@ -20,6 +20,7 @@ import Carousel from "./components/carousel/Carousel.jsx";
 import VideoBg from './assets/videoBg.mp4';
 import Footer from "./components/footer/Footer.jsx";
 import About from "./pages/aboutus/About";
+import EngagementAndBridal from './pages/engagementandbridal/EngagementAndBridal';
 import Watch from "./pages/watches/Watch";
 import GoTop from "./components/GoTop";
 import Store from "./pages/store/Store";
@@ -88,6 +89,7 @@ function App() {
             />
             <Route path="/watches" element={<Watch />} />
             <Route path="/about" element={<About />} />
+            <Route path="/engagementandbridal" element={<EngagementAndBridal />} />
             <Route path="/store" element={<Store />} />
             <Route path="/contactus" element={<Contactus />} />
           </Routes>
