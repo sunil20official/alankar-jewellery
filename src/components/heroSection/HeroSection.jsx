@@ -8,6 +8,7 @@ const HeroSection = () => {
 			<video
 				src={VideoBg}
 				preload='auto'
+				typeof='video/mp4'
 				autoPlay
 				loop
 				muted
