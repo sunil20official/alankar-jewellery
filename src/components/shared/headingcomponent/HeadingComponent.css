@@ -2,7 +2,7 @@
   /* position: relative; */
   width: 100%;
   /* left: calc(-50vw + 50%); */
-  background-color: #f9f9f9;
+  background-color: rgb(4, 14, 40);
   padding: 60px 0px;
   display: flex;
   justify-content: center;
@@ -15,14 +15,14 @@
 }
 
 .heading-comp-h1 {
-  color: #383838;
+  color: #fbbc93;
   font-family: "PT Serif", serif;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
 
 .heading-comp-line {
-  border-top: 2px solid #ddcb78;
+  border-top: 1px solid #fbbc93;
   max-width: 647px;
   margin-bottom: 30px;
 }
@@ -34,7 +34,7 @@
   font-style: normal;
   font-size: 15px !important;
   text-align: center;
-  color: #656565;
+  color: #fff;
   font-family: "PT Serif", serif;
   margin-bottom: 0px;
   letter-spacing: 0.5px;

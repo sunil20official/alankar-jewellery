@@ -1,5 +1,5 @@
 import React from "react";
-import "./Store.css";
+import "../store/Store.css";
 import HeadingComponent from "../../components/shared/headingcomponent/HeadingComponent";
 import image1 from "../../assets/watchs/herolarged_avenue_collection.avif";
 import ButtonComponent from "../../components/shared/buttonComponent/ButtonComponent";
@@ -15,18 +15,14 @@ import img7 from "../../assets/creationsImage/PNeckLace.jpg";
 
 const Store = () => {
   const all = [img1, img2, img3, img4, img5, img6, img7, img3];
-  const bangles = [img1, img2, img3];
-  const bracelet = [img4, img5, img6, img7, img3];
-  const necklace = [img1, img2, img7, img3];
-  const earring = [img1, img2, img3, img6, img7, img3];
-  const rings = [img2, img3, img4, img5, img6, img7];
 
-  const [currCollection, setCurrCollection] = React.useState(all);
-  const [currFilter, setCurrFilter] = React.useState('all');
+  // const [currCollection, setCurrCollection] = React.useState(all);
+  // const [currFilter, setCurrFilter] = React.useState("all");
 
-  React.useEffect(() => {
-    console.log("comp rerender");
-  }, [currCollection,currFilter]);
+  // React.useEffect(() => {
+  //   console.log("comp rerender");
+  // }, [currCollection, currFilter]);
+
   return (
     <div>
       <img
@@ -36,7 +32,7 @@ const Store = () => {
         alt="page top"
       />
       <HeadingComponent
-        heading={"Our Collection"}
+        heading={"Engagement & Bridal"}
         paragraph={
           "Through its collections, the House of Alankar reinterprets time in the most elegant way."
         }
@@ -45,7 +41,7 @@ const Store = () => {
         }
         marginTop={"0px"}
       />
-      <div className="filter-component-container">
+      {/* <div className="filter-component-container">
         <div className="filter-container">
           <div
             className={
@@ -118,22 +114,18 @@ const Store = () => {
             Rings
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="store-container">
         <div className="store-grid">
-          {currCollection.map((item) => (
-           
-              <div
-                className="item-container"
-              >
-                <LazyLoadImage
-                  style={{ width: "100%" }}
-                  src={item}
-                  effect="blur"
-                  alt="collection of pics from alankar store"
-                />
-              </div>
-           
+          {all.map((item) => (
+            <div className="item-container">
+              <LazyLoadImage
+                style={{ width: "100%" }}
+                src={item}
+                effect="blur"
+                alt="collection of pics from alankar store"
+              />
+            </div>
           ))}
         </div>
       </div>

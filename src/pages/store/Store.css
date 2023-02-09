@@ -3,9 +3,43 @@
   object-fit: cover;
 }
 
+.filter-component-container{
+  margin: 0px auto;
+  background-color: rgb(4, 14, 40);
+}
+
+.filter-container{
+  margin: 0px auto;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-item{
+  margin: 0px 10px;
+  padding: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'PT Serif', serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.active-filter-item{
+  color: #fbbc93;
+  background-color: rgb(4, 14, 40);
+  border: 2px solid #fbbc93;
+}
+
 .store-container {
-  margin: 2rem auto;
+  margin: 0rem auto;
+  padding: 2rem 0rem;
   max-width: 1100px;
+  background-color: rgb(4, 14, 40);
 }
 
 .store-grid {
@@ -15,12 +49,25 @@
 }
 
 .store-grid > div {
-  border: 10px solid #b5a663;
+  border: 5px solid #fbbc93;
   height: 275px;
   aspect-ratio: 1/1;
   margin: auto;
   cursor: pointer;
   transition: all ease-in-out 350ms;
+  animation: animatecollection 650ms linear;
+}
+
+@keyframes animatecollection {
+	0% {
+		opacity: 0;
+    transform: scale(0);
+    transform-origin: center;
+	}
+	100% {
+		opacity: 1;
+    transform: scale(1);
+	}
 }
 
 .store-grid > div:hover{

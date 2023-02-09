@@ -3,8 +3,9 @@
   flex-direction: row;
   justify-self: center;
   align-items: center;
-  padding: 1rem 2rem;
-  margin: 1rem auto;
+  padding: 2rem;
+  margin: 0rem auto;
+  background-color: rgb(4, 14, 40);
 }
 
 .jewellery-container-rev {
@@ -12,8 +13,9 @@
   flex-direction: row-reverse;
   justify-self: center;
   align-items: center;
-  padding: 1rem 2rem;
-  margin: 1rem auto;
+  padding: 2rem;
+  margin: 0rem auto;
+  background-color: rgb(4, 14, 40);
 }
 
 .left-section-container {
@@ -42,6 +44,7 @@
 .right-section-container > p {
   margin: 15px auto 0px;
   font-size: 14px;
+  color: #fff;
 }
 
 .right-section-container > h4 {
@@ -49,8 +52,8 @@
   line-height: 28.9px;
   font-family: "PT Serif", serif;
   text-transform: uppercase;
-  font-weight: 700;
   letter-spacing: 0.8px;
+  color: #fbbc93;
 }
 
 .home-discover-more-btn {
@@ -60,9 +63,9 @@
   letter-spacing: 0.5px;
   line-height: 20px;
   text-align: center;
-  color: white;
-  background: rgb(4, 14, 40);
-  /* font-family: 'WilliamsCaslonText'; */
+  color: #fbbc93;
+  border: 2px solid #fbbc93;
+  background: transparent;
   font-family: "PT Serif",  serif;
   border-radius: 4px;
   text-transform: uppercase;
@@ -71,7 +74,7 @@
 
 .home-discover-more-btn:hover {
   color: rgb(4, 14, 40);
-  background: white;
+  background: #fbbc93;
   transform: scale(1.05);
 }
 
