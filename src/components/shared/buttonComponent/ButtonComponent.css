@@ -8,9 +8,10 @@
 }
 
 .button-comp-content Button {
-	color: white;
-	background: rgb(4, 14, 40);
+	color: #fbbc93;
+	background: transparent;
 	font-family: 'WilliamsCaslonText';
 	padding: 0.8rem 1.5rem;
-	border-radius: 0px;
+	border-radius: 4px;
+	border: 1px solid #fbbc93;
 }
