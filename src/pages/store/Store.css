@@ -25,13 +25,11 @@
   font-family: 'PT Serif', serif;
   font-size: 14px;
   letter-spacing: 1px;
-  transition: all ease-in-out 350ms;
   color: #fff;
   border-radius: 5px;
 }
 
 .active-filter-item{
-  font-weight: bold;
   color: #fbbc93;
   background-color: rgb(4, 14, 40);
   border: 2px solid #fbbc93;
