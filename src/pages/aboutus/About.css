@@ -2,7 +2,7 @@
   /* position: relative; */
   width: 100%;
   /* left: calc(-50vw + 50%); */
-  background-color: #fff;
+  background-color: rgb(4, 14, 40);
   padding: 60px 0px;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@
   line-height: 3.75rem;
   position: relative;
   cursor: pointer;
-  color: #383838;
+  color: #fbbc93;
   font-family: "PT Serif", serif;
   padding: 5px;
   overflow: hidden;
@@ -95,6 +95,7 @@
 .timeline-obj-heading {
   font-size: 1.5rem;
   font-family: "PT Serif", serif;
+  color: #fbbc93;
 }
 
 .timeline-obj-text-part > p {
@@ -104,6 +105,7 @@
   font-family: "PT Serif", serif;
   letter-spacing: 0.3px;
   text-align: justify;
+  color: #fff;
 }
 
 .timeline-obj-img-part {
@@ -115,12 +117,15 @@
 }
 
 .timeline-obj-year {
-  color: #b5a663;
+  color: #fbbc93;
   font-family: SemiBoldCaslon;
   font-size: 3rem;
 }
 
 @media screen and (max-width: 900px) {
+  .timeline-container {
+    padding: 10px 0px 40px;
+  }
   .timeline-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -144,7 +149,6 @@
     line-height: 3.75rem;
     position: relative;
     cursor: pointer;
-    color: #383838;
     font-family: "PT Serif", serif;
     padding: 5px 10px;
     margin: 0px 5px;
@@ -204,7 +208,6 @@
     line-height: 3.75rem;
     position: relative;
     cursor: pointer;
-    color: #383838;
     font-family: "PT Serif", serif;
     padding: 5px 10px;
     margin: 0px 5px;
