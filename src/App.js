@@ -61,7 +61,7 @@ function App() {
                       img_src={img1}
                       heading={"Diamond Jewellery"}
                       paragraph={
-                        "Gift your special moments the brilliant sparkle and charm of eternity with prudently crafted diamond necklaces, earrings, and bangles from Hazoorilal jewellers."
+                        "Gift your special moments the brilliant sparkle and charm of eternity with prudently crafted diamond necklaces, earrings, and bangles from Alankar jewellers."
                       }
                       link={"/store"}
                     />
@@ -69,7 +69,7 @@ function App() {
                       img_src={img2}
                       heading={"Gold Jewellery"}
                       paragraph={
-                        "Whether it is one of those important occasions in our life or just ordinary moments, gold jewellery collection from Hazoorilal jewellers makes for the most popular choice."
+                        "Whether it is one of those important occasions in our life or just ordinary moments, gold jewellery collection from Alankar jewellers makes for the most popular choice."
                       }
                       link={"/store"}
                     />
@@ -77,7 +77,7 @@ function App() {
                       img_src={img3}
                       heading={"Polki Jewellery"}
                       paragraph={
-                        "Intricately crafted Polki jewellery from Hazoorilal jewellers, with natural uncut diamonds arranged in a beautiful tapestry, is indeed what you should be looking forward to in order to feel special."
+                        "Intricately crafted Polki jewellery from Alankar jewellers, with natural uncut diamonds arranged in a beautiful tapestry, is indeed what you should be looking forward to in order to feel special."
                       }
                       link={"/store"}
                     />

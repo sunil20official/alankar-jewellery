@@ -150,7 +150,7 @@ const Navbar = () => {
             </h1>
             <ul>
               {/* location icon */}
-              <li>
+              <li onClick={() => navigate('/contactus')}>
                 <svg
                   width="25"
                   height="25"
