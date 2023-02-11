@@ -2,15 +2,15 @@
 	padding: 4rem 0;
 }
 
-.contacts-section {
+/* .contacts-section {
 	background-color: #fff !important;
-}
+} */
 
 .card {
 	color: #fff;
-	background-color: rgb(7, 3, 34);
-	border: 3px solid #b5a663;
-	font-family: "PT Serif", serif;
+	background-color: rgb(4, 14, 40);
+	border: 3px solid #fbbc93;
+	font-family: 'PT Serif', serif;
 	padding: 1rem;
 }
 
@@ -25,7 +25,7 @@
 
 .flagship-store-section a {
 	text-decoration: none;
-	color: #b5a663;
+	color: #fbbc93;
 }
 
 .col-md-8 {

@@ -53,7 +53,7 @@
 	height: 100%;
 	object-fit: contain;
 	padding: 3rem;
-	background: #a0753e;
+	background: rgb(4, 14, 40);
 }
 
 .swiper-pagination-bullet {
@@ -69,6 +69,7 @@
 
 .swiper-container {
 	position: relative;
+	border: 1px solid black;
 }
 
 /* .on-swiper-button {
@@ -92,6 +93,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		border: none;
 	}
 
 	.swiper-slide img {

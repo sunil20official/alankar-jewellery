@@ -17,7 +17,8 @@ import HeroSection from "./components/heroSection/HeroSection";
 import Navbar from "./components/navbar/Navbar";
 import Carousel from "./components/carousel/Carousel.jsx";
 // import OurCreations from "./components/ourcreations/OurCreations";
-import VideoBg from './assets/videoBg.mp4';
+
+// import VideoBg from './assets/videoBg.mp4';
 import Footer from "./components/footer/Footer.jsx";
 import About from "./pages/aboutus/About";
 import EngagementAndBridal from './pages/engagementandbridal/EngagementAndBridal';

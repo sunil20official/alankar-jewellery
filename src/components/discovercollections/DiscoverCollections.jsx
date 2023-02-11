@@ -3,7 +3,7 @@ import './DiscoverCollection.css';
 import Image2 from '../../assets/creationsImage/EarPiece.jpg';
 import Image1 from '../../assets/creationsImage/PNeckLace.jpg';
 import Image3 from '../../assets/creationsImage/Bangal.jpg';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import ButtonComponent from '../shared/buttonComponent/ButtonComponent';
 
 const DiscoverCollections = () => {
@@ -12,7 +12,7 @@ const DiscoverCollections = () => {
 		<div>
 			<div class='album py-3 bg-light'>
 				<h2 className='text-center'>DISCOVER OUR NEW COLLECTIONS</h2>
-				<div class='container py-2'>
+				<div class='container py-2' style={{ background: 'rgb(4, 14, 40)' }}>
 					<div class='row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3'>
 						<div class='col'>
 							<div class='card shadow-sm'>
