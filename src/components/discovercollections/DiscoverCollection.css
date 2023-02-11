@@ -1,42 +1,50 @@
+.album {
+	background: rgb(4, 14, 40) !important;
+}
+
 .album h2 {
-  font-size: 22.1px;
-  line-height: 28.9px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  font-family: "PT Serif", serif !important;
-  margin: 20px 0;
+	font-size: 22.1px;
+	line-height: 28.9px;
+	letter-spacing: 0.8px;
+	font-family: 'PT Serif', serif !important;
+	margin: 20px 0;
+	color: #fbbc93;
 }
 
 .album h4 {
-  margin-bottom: -25px !important;
+	font-size: 22.1px;
+	/* line-height: 28.9px; */
+	margin-bottom: -20px !important;
+	letter-spacing: 0.8px;
+	font-family: 'PT Serif', serif !important;
+	color: #fbbc93;
 }
 
 .home-discover-more-bttn {
-  padding: 8px 10px;
-  margin: 1rem;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  line-height: 20px;
-  text-align: center;
-  color: white;
-  background: rgb(4, 14, 40);
-  /* font-family: 'WilliamsCaslonText'; */
-  font-family: "PT Serif",  serif;
-  border-radius: 4px;
-  text-transform: uppercase;
-  transition: all ease-in-out 350ms;
+	padding: 8px 10px;
+	margin: 1rem;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+	text-align: center;
+	color: #fbbc93;
+	background: rgb(4, 14, 40);
+	font-family: 'PT Serif', serif;
+	border-radius: 4px;
+	text-transform: uppercase;
+	transition: all ease-in-out 350ms;
+	border: 2px solid #fbbc93;
 }
 
 .home-discover-more-bttn:hover {
-  color: rgb(4, 14, 40);
-  background: white;
-  transform: scale(1.05);
+	color: #000;
+	background: #fbbc93;
+	transform: scale(1.05);
 }
 
-@media screen and (max-width:900px) {
-	.album h2{
+@media screen and (max-width: 900px) {
+	.album h2 {
 		font-size: 18.2px;
-    line-height: 23.8px;
+		line-height: 23.8px;
 	}
 }

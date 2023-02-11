@@ -8,7 +8,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Footer = () => {
 	return (
-		<div style={{ background: '#040e28' }}>
+		<div className='footer-outer-div'>
 			<div className='container'>
 				<footer class='p-5'>
 					<div class='row'>

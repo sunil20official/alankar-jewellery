@@ -1,13 +1,17 @@
+.footer-outer-div {
+	background: rgb(7, 3, 34) !important;
+}
+
 .container {
-	background: #040e28 !important;
+	background: rgb(7, 3, 34);
 	color: white;
 }
 
 .footer-h3 {
-	color: white;
+	color: #fbbc93;
 	font-size: 15px;
 	text-transform: uppercase;
-	font-family: "PT Serif", serif;
+	font-family: 'PT Serif', serif;
 	letter-spacing: 0.05rem;
 }
 
@@ -18,13 +22,13 @@
 .nav .nav-item a {
 	font-family: 'SemiBoldCaslon';
 	font-size: 14px;
-	color: #6c757d;
+	color: #fff;
 }
 
 .nav .nav-item .nav-link:hover {
-	color: #fff;
+	color: #fbbc93;
 }
 
 .nav .nav-item .social-links:hover {
-	color: #fff;
+	color: #fbbc93;
 }

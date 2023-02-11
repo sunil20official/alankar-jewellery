@@ -34,7 +34,10 @@ const Carousel = () => {
 	return (
 		<div>
 			<div className='carousel-container'>
-				<div className='carousel-section' style={{ backgroundColor: '#88704A' }}>
+				<div
+					className='carousel-section'
+					style={{ backgroundColor: '#88704A', border: '2px solid #fbbc93' }}
+				>
 					<Swiper
 						// spaceBetween={50}
 						// slidesPerView={3}
@@ -45,7 +48,7 @@ const Carousel = () => {
 						className='mySwiper'
 					>
 						<div className='swiper-container'>
-							<SwiperSlide style={{ background: '#fff' }}>
+							<SwiperSlide>
 								<img src={Slide1} alt='CaruoselImage' />
 							</SwiperSlide>
 							<SwiperSlide>

@@ -13,15 +13,18 @@ const Contactus = () => {
 					}
 					marginTop={'-4rem'}
 				/>
-				<div className='container contacts-section'>
+				<div
+					className='container contacts-section'
+					style={{ background: 'rgb(4, 14, 40)' }}
+				>
 					<div className='row' style={{ maxWidth: '1080px', margin: '0 auto' }}>
 						<div className='col-md-4 col-sm-6 mt-5'>
 							<div className='card vh-50'>
 								<h5>ALANKAR JEWELLERS</h5>
 								<div className='flagship-store-section'>
-									<strong>
-										<a href='#'>Flagship Store</a>&nbsp;
-									</strong>
+									<>
+										<a href='/contactus'>Flagship Store</a>&nbsp;
+									</>
 									|&nbsp;
 									<a
 										href='https://www.google.com/maps/dir/28.6411805,77.0449214/Alankar+Jewellers+-+Flagship+Store,+Alankar+Business+Center,+E+Boring+Canal+Rd,+Opp.+Udayan+Hospital,+Sri+Krishna+Nagar,+Buddha+Colony,+Patna,+Bihar+800001/@27.0890355,78.8390607,7z/data=!3m2!4b1!5s0x39ed583fc934cced:0x5935092c4d03fec0!4m10!4m9!1m1!4e1!1m5!1m1!1s0x39ed5836ddf9f617:0x3b84a8ddec34fb7b!2m2!1d85.1234216!2d25.6205214!3e0'
@@ -44,10 +47,17 @@ const Contactus = () => {
 								</div>
 								<hr />
 								<div className='flagship-store-section'>
-									<strong>
-										<a href='#'>Heritage Store</a>&nbsp;
-									</strong>
-									|&nbsp;<a href='#'>Get Direction</a>
+									<>
+										<a href='/contactus'>Heritage Store</a>&nbsp;
+									</>
+									|&nbsp;
+									<a
+										target='_blank'
+										rel='noreferrer'
+										href='https://www.google.com/maps/dir//alankar+jewellers+-+heritage+store/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x39ed583b78701369:0x2bc9b5215c2508a?sa=X&ved=2ahUKEwj57MmvqoX9AhXGTWwGHdqUBSEQ9Rd6BAhEEAM'
+									>
+										Get Direction
+									</a>
 									<br />
 									Alankar Business Center <br /> East Boring Canal Road <br /> Patna,
 									Bihar, India 800001 <br /> Tel :&nbsp;
