@@ -1,117 +1,117 @@
 .jewellery-container {
-  display: flex;
-  flex-direction: row;
-  justify-self: center;
-  align-items: center;
-  padding: 2rem;
-  margin: 0rem auto;
-  background-color: rgb(4, 14, 40);
+	display: flex;
+	flex-direction: row;
+	justify-self: center;
+	align-items: center;
+	padding: 2rem;
+	margin: 0rem auto;
+	background-color: rgb(4, 14, 40);
 }
 
 .jewellery-container-rev {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-self: center;
-  align-items: center;
-  padding: 2rem;
-  margin: 0rem auto;
-  background-color: rgb(4, 14, 40);
+	display: flex;
+	flex-direction: row-reverse;
+	justify-self: center;
+	align-items: center;
+	padding: 2rem;
+	margin: 0rem auto;
+	background-color: rgb(4, 14, 40);
 }
 
 .left-section-container {
-  width: 66%;
+	width: 66%;
 }
 
 .left-section-container > img {
-  width: 95%;
+	width: 95%;
 }
 
 .img-float-right {
-  float: right;
+	float: right;
 }
 
 .img-float-left {
-  float: left;
+	float: left;
 }
 
 .right-section-container {
-  padding: 10px;
-  width: 30%;
-  text-align: center;
-  font-family: "PT Serif", serif;
+	padding: 10px;
+	width: 30%;
+	text-align: center;
+	font-family: 'PT Serif', serif;
 }
 
 .right-section-container > p {
-  margin: 15px auto 0px;
-  font-size: 14px;
-  color: #fff;
+	margin: 15px auto 0px;
+	font-size: 14px;
+	color: #fff;
 }
 
 .right-section-container > h4 {
-  font-size: 22.1px;
-  line-height: 28.9px;
-  font-family: "PT Serif", serif;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: #fbbc93;
+	font-size: 22.1px;
+	line-height: 28.9px;
+	font-family: 'PT Serif', serif;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	color: #fbbc93;
 }
 
 .home-discover-more-btn {
-  padding: 8px 10px;
-  margin: 1rem;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  line-height: 20px;
-  text-align: center;
-  color: #fbbc93;
-  border: 2px solid #fbbc93;
-  background: transparent;
-  font-family: "PT Serif",  serif;
-  border-radius: 4px;
-  text-transform: uppercase;
-  transition: all ease-in-out 350ms;
+	padding: 8px 10px;
+	margin: 1rem;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+	text-align: center;
+	color: #fbbc93;
+	border: 2px solid #fbbc93;
+	background: transparent;
+	font-family: 'PT Serif',  serif;
+	border-radius: 4px;
+	text-transform: uppercase;
+	transition: all ease-in-out 350ms;
 }
 
 .home-discover-more-btn:hover {
-  color: rgb(4, 14, 40);
-  background: #fbbc93;
-  transform: scale(1.05);
+	color: rgb(4, 14, 40);
+	background: #fbbc93;
+	transform: scale(1.05);
 }
 
 @media screen and (max-width: 900px) {
-  .jewellery-container {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    padding: 0rem;
-    margin: 0rem auto;
-    flex-direction: column;
-  }
-  .jewellery-container-rev {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;
-    padding: 0rem;
-    margin: 0rem auto;
-  }
-  .right-section-container > h4 {
-    padding: 1rem 0 0;
-    font-size: 18.2px;
-    line-height: 23.8px;
-  }
-  .left-section-container {
-    width: 100%;
-  }
+	.jewellery-container {
+		display: flex;
+		justify-self: center;
+		align-items: center;
+		padding: 0rem;
+		margin: 0rem auto;
+		flex-direction: column;
+	}
+	.jewellery-container-rev {
+		display: flex;
+		flex-direction: column;
+		justify-self: center;
+		align-items: center;
+		padding: 0rem;
+		margin: 0rem auto;
+	}
+	.right-section-container > h4 {
+		padding: 1rem 0 0;
+		font-size: 18.2px;
+		line-height: 23.8px;
+	}
+	.left-section-container {
+		width: 100%;
+	}
 
-  .left-section-container > img {
-    width: 100%;
-  }
+	.left-section-container > img {
+		width: 100%;
+	}
 
-  .right-section-container {
-    width: 100%;
-    padding: 15px 9px;
-    text-align: center;
-    font-family: "PT Serif", serif;
-  }
+	.right-section-container {
+		width: 100%;
+		padding: 15px 9px;
+		text-align: center;
+		font-family: 'PT Serif', serif;
+	}
 }

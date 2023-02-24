@@ -6,14 +6,14 @@ import { Pagination } from 'swiper';
 import ButtonComponent from '../shared/buttonComponent/ButtonComponent';
 
 // images
-import Slide1 from '../../assets/Caruosel/GoldNeckLace.jpg';
-import Slide2 from '../../assets/Caruosel/GoldNeckLace2.jpg';
-import Slide3 from '../../assets/Caruosel/Necklace.jpg';
-import Slide4 from '../../assets/Caruosel/WhiteNeckLace.jpg';
-import Slide5 from '../../assets/Caruosel/GreenEmerald.jpg';
-import Slide6 from '../../assets/Caruosel/WGNeckLace.jpg';
-import Slide7 from '../../assets/Caruosel/EleNeckLace.jpg';
-import Slide8 from '../../assets/Caruosel/GoldEarRings.jpg';
+import Slide1 from '../../assets/model/1.jpg';
+import Slide2 from '../../assets/model/2.jpg';
+import Slide3 from '../../assets/model/3.jpg';
+import Slide4 from '../../assets/model/4.jpg';
+import Slide5 from '../../assets/model/5.jpg';
+import Slide6 from '../../assets/model/6.jpg';
+import Slide7 from '../../assets/model/7.jpg';
+import Slide8 from '../../assets/model/8.jpg';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';

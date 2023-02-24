@@ -1,6 +1,6 @@
 import React from 'react';
 import '../heroSection/HeroSection.css';
-import VideoBg from '../../assets/alankar.mp4';
+import VideoBg from '../../assets/videoBg.mp4';
 
 const HeroSection = () => {
 	return (
