@@ -38,4 +38,5 @@
 	font-family: 'PT Serif', serif;
 	margin-bottom: 0px;
 	letter-spacing: 0.5px;
+	text-justify: inter-cluster;
 }

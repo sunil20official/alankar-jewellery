@@ -38,10 +38,10 @@ const Store = () => {
 			<HeadingComponent
 				heading={'Our Collection'}
 				paragraph={
-					'At Alankar Jewellers, we take pride in offering our clients a wide range of exquisite jewellery collections.'
+					'At Alankar Jewellers, we take pride in offering our clients a wide range of exquisite jewellery.'
 				}
 				paragraph2={
-					'From classic and timeless designs to modern and cutting-edge styles, our  collections feature pieces that are perfect for any occasion'
+					'From classic and timeless designs to modern and cutting-edge styles, our collections feature pieces that are perfect for any occasion'
 				}
 				marginTop={'0px'}
 			/>
