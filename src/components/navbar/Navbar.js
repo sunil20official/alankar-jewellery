@@ -263,7 +263,7 @@ const Navbar = () => {
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-              onClick={() => onClickMobileBurger("/store")}
+              onClick={() => onClickMobileBurger("/engagementandbridal")}
             >
               Engagement & Bridal
             </li>
