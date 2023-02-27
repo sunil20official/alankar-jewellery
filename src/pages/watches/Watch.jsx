@@ -26,7 +26,7 @@ const Watch = () => {
 				<HeadingComponent
 					heading={'Watchmaking'}
 					paragraph={
-						'Through its collections, the House of Alankar reinterprets time in the most elegant way.'
+						'At Alankar Jewellers, we are proud to offer an exceptional collection of luxury watches.'
 					}
 					paragraph2={
 						'Enter a world of pure luxury and know-how to explore our exceptional creations.'

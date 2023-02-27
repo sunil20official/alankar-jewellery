@@ -13,12 +13,12 @@
 
 .carousel-left-Image {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 }
 
 .carousel-img {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	object-fit: contain;
 }
 
@@ -101,7 +101,8 @@
 		padding: 0;
 	}
 	.carousel-img {
-		height: 46vh;
+		/* position: absolute; */
+		height: 100vw;
 		width: auto;
 	}
 	.carousel-left-Image {

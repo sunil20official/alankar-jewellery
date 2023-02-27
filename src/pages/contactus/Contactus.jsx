@@ -9,7 +9,10 @@ const Contactus = () => {
 				<HeadComponent
 					heading={'Contact Us'}
 					paragraph={
-						'For additional assistance, contact the Flagship Store directly.'
+						'For additional assistance, contact the Flagship Store directly. Please do not hesitate ot contact us.'
+					}
+					paragraph2={
+						'Our team of experts is always ready to assist you in finding the perfect piece of jewellery to suit your needs and preferences.'
 					}
 					marginTop={'-4rem'}
 				/>

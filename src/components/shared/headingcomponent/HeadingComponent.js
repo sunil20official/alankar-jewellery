@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeadingComponent.css';
 
-const HeadingComponent = ({ heading, paragraph, marginTop, paragraph2 }) => {
+const HeadingComponent = ({ heading, paragraph, marginTop, paragraph2, paragraph3 }) => {
 	return (
 		<div style={{ marginTop: `${marginTop}` }} className='heading-comp-container'>
 			<div className='heading-comp-content'>
@@ -9,6 +9,7 @@ const HeadingComponent = ({ heading, paragraph, marginTop, paragraph2 }) => {
 				<hr className='heading-comp-line'></hr>
 				<p className='heading-comp-p'>{paragraph}</p>
 				<p className='heading-comp-p'>{paragraph2}</p>
+				<p className='heading-comp-p'>{paragraph3}</p>
 			</div>
 		</div>
 	);
