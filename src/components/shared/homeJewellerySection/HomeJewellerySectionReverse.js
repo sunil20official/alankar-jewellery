@@ -14,17 +14,14 @@ const HomeJewellerySectionReverse = (
     <div>
       <div>
         <div className="jewellery-container-rev">
-          <div className="left-section-container">
+          <div className="left-section-container" data-aos="fade-up">
             <LazyLoadImage
               className="img-float-left"
               src={img_src}
               alt="jewellery section for home page"
             />
           </div>
-          <div
-            className="right-section-container"
-            data-aos="fade-up"
-          >
+          <div className="right-section-container" data-aos="fade-up">
             <h4>{heading}</h4>
             <p>{paragraph}</p>
             <button
