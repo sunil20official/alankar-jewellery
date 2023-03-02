@@ -22,7 +22,10 @@ const HomeJewellerySection = ({
               alt="jewellery section for home page"
             />
           </div>
-          <div className="right-section-container animate__fadeInUp">
+          <div
+            className="right-section-container"
+            data-aos="fade-up"
+          >
             <h4>{heading}</h4>
             <p>{paragraph}</p>
             <button

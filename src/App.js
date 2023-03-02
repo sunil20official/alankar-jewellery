@@ -3,9 +3,6 @@ import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 
-import { AnimatePresence } from 'framer-motion';
-import { motion } from 'framer-motion';
-
 // home jewellery component images
 import img1 from './assets/model/HomeJewel3.jpg';
 import img2 from './assets/model/HomeJewel1.jpg';
@@ -44,17 +41,11 @@ function App() {
 		<div style={{}} className='App'>
 			<Router>
 				<Navbar />
-				<AnimatePresence>
 					<Routes>
 						<Route
 							path='/'
 							element={
 								<>
-									<motion.div
-										initial={{ opacity: 0, y: 500 }}
-										animate={{ opacity: 1, y: 0 }}
-										exit={{ opacity: 0 }}
-									>
 										<HeroSection />
 										<DiscoverCollections />
 										<HomeJewellerySection
@@ -83,8 +74,6 @@ function App() {
 										/>
 
 										<Carousel />
-										{/* <OurCreations /> */}
-									</motion.div>
 								</>
 							}
 						/>
@@ -94,7 +83,6 @@ function App() {
 						<Route path='/store' element={<Store />} />
 						<Route path='/contactus' element={<Contactus />} />
 					</Routes>
-				</AnimatePresence>
 				<GoTop />
 				<Footer />
 			</Router>
