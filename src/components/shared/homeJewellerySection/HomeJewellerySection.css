@@ -40,6 +40,11 @@
   width: 30%;
   text-align: center;
   font-family: "PT Serif", serif;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .right-section-container > p {
@@ -114,5 +119,6 @@
     padding: 15px 9px;
     text-align: center;
     font-family: "PT Serif", serif;
+		min-height: 300px;
   }
 }
