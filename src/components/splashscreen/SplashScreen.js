@@ -10,7 +10,7 @@ const SplashScreen = () => {
         alignItems: "center",
         width: "100%",
         height: "100vh",
-        background: "rgb(7, 3, 34)",
+        background: "black",
       }}
     >
       <div>

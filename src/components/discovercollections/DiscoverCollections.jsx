@@ -12,7 +12,7 @@ const DiscoverCollections = () => {
 		<div>
 			<div class='album py-3 bg-light'>
 				<h2 className='text-center'>DISCOVER OUR NEW COLLECTIONS</h2>
-				<div class='container py-2' style={{ background: 'rgb(4, 14, 40)' }}>
+				<div class='container py-2' style={{ background: 'black' }}>
 					<div class='row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3'>
 						<div class='col'>
 							<div class='card shadow-sm'>

@@ -39,7 +39,7 @@
 }
 
 .App {
-	background-color: rgb(4, 14, 40);
+	background-color: black;
 	transition: all ease-in-out 300ms;
 	animation: animateapp 550ms linear;
 }

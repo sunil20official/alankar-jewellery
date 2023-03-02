@@ -1,5 +1,5 @@
 .album {
-	background: rgb(4, 14, 40) !important;
+	background: black !important;
 }
 
 .album h2 {
@@ -28,7 +28,7 @@
 	line-height: 20px;
 	text-align: center;
 	color: #fbbc93;
-	background: rgb(4, 14, 40);
+	background: black;
 	font-family: 'PT Serif', serif;
 	border-radius: 4px;
 	text-transform: uppercase;

@@ -1,24 +1,28 @@
-import React from 'react';
+import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { useNavigate } from 'react-router-dom';
-import './HomeJewellerySection.css';
+import { useNavigate } from "react-router-dom";
+import "./HomeJewellerySection.css";
 
-const HomeJewellerySection = ({ img_src, img_float, heading, paragraph, link }) => {
+const HomeJewellerySection = ({
+  img_src,
+  img_float,
+  heading,
+  paragraph,
+  link,
+}) => {
   const navigate = useNavigate();
   return (
     <div>
       <div>
-        <div
-          className='jewellery-container'
-        >
+        <div className="jewellery-container">
           <div className="left-section-container">
             <LazyLoadImage
-              className='img-float-right'
+              className="img-float-right"
               src={img_src}
               alt="jewellery section for home page"
             />
           </div>
-          <div className="right-section-container">
+          <div className="right-section-container animate__fadeInUp">
             <h4>{heading}</h4>
             <p>{paragraph}</p>
             <button
@@ -32,6 +36,6 @@ const HomeJewellerySection = ({ img_src, img_float, heading, paragraph, link }) 
       </div>
     </div>
   );
-}
+};
 
 export default HomeJewellerySection;

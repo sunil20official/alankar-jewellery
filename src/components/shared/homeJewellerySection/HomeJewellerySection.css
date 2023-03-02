@@ -5,7 +5,7 @@
 	align-items: center;
 	padding: 2rem;
 	margin: 0rem auto;
-	background-color: rgb(4, 14, 40);
+	background-color: black;
 }
 
 .jewellery-container-rev {
@@ -15,7 +15,7 @@
 	align-items: center;
 	padding: 2rem;
 	margin: 0rem auto;
-	background-color: rgb(4, 14, 40);
+	background-color: black;
 }
 
 .left-section-container {
@@ -73,7 +73,7 @@
 }
 
 .home-discover-more-btn:hover {
-	color: rgb(4, 14, 40);
+	color: black;
 	background: #fbbc93;
 	transform: scale(1.05);
 }

@@ -31,7 +31,7 @@ const Wrapper = styled.section`
 		width: 3rem;
 		height: 3rem;
 
-		background-color: #040e28;
+		background-color: black;
 		box-shadow: #00182b;
 		border: 1px solid white;
 		border-radius: 50%;

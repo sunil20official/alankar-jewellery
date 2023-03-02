@@ -18,7 +18,7 @@ const Contactus = () => {
 				/>
 				<div
 					className='container contacts-section'
-					style={{ background: 'rgb(4, 14, 40)' }}
+					style={{ background: 'black' }}
 				>
 					<div className='row' style={{ maxWidth: '1080px', margin: '0 auto' }}>
 						<div className='col-md-4 col-sm-6 mt-5'>
