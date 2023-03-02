@@ -1,148 +1,146 @@
 import React from 'react';
 import './Footer.css';
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+// import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import TwitterIcon from '@mui/icons-material/Twitter';
+// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+// import YouTubeIcon from '@mui/icons-material/YouTube';
+import logo from '../../assets/logo_low_white.png';
+import WriteToUS from './writeToUs';
 
 const Footer = () => {
 	return (
 		<div className='footer-outer-div'>
-			<div className='container'>
-				<footer class='p-5'>
-					<div class='row'>
-						<div class='col-md-3 col-6 mb-3'>
-							<h3 className='footer-h3'>services</h3>
-							<ul class='nav flex-column'>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										Home
-									</a>
-								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										Features
-									</a>
-								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										Pricing
-									</a>
-								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										FAQs
-									</a>
-								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										About
-									</a>
-								</li>
-							</ul>
+			<div className='container-fluid'>
+				<footer className='p-5'>
+					<div className='row'>
+						<div className='col-md-3 col-sm-6 mb-3'>
+							<div className='Footer-logo'>
+								<img src={logo} alt='logoInFooter' />
+							</div>
+							<p className='footer-text'>
+								Welcome to Alankar Jewellers, where luxury and elegance meet to create
+								timeless pieces of jewellery that will last a lifetime. We are proud to
+								present our exquisite collections, featuring beautifully crafted
+								diamond, polki, and gold jewellery, as well as stunning engagement and
+								bridal sets
+							</p>
 						</div>
 
-						<div class='col-md-3 col-6 mb-3'>
-							<h3 className='footer-h3'>corporate</h3>
-							<ul class='nav flex-column'>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										Home
-									</a>
-								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										Features
-									</a>
-								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										Pricing
-									</a>
-								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										FAQs
-									</a>
-								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										About
-									</a>
-								</li>
-							</ul>
+						<div className='col-md-3 col-sm-6 mb-3'>
+							<h3 className='footer-h3'>WRITE TO US</h3>
+							<div className='footer-form'>
+								<WriteToUS />
+							</div>
 						</div>
 
-						<div class='col-md-3 col-6 mb-3'>
-							<h3 className='footer-h3'>legal terms</h3>
-							<ul class='nav flex-column'>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										Home
+						<div className='col-md-3 col-sm-6 mb-3'>
+							<h3 className='footer-h3'>QUICK LINKS</h3>
+							<ul className='nav flex-column'>
+								<li className='nav-item mb-2'>
+									<a href='/store' className='nav-link p-0'>
+										Gold Collection
 									</a>
 								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										Features
+								<li className='nav-item mb-2'>
+									<a href='/store' className='nav-link p-0'>
+										Diamond Collections
 									</a>
 								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										Pricing
+								<li className='nav-item mb-2'>
+									<a href='/store' className='nav-link p-0'>
+										Polki Collection
 									</a>
 								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										FAQs
-									</a>
-								</li>
-								<li class='nav-item mb-2'>
-									<a href='#' class='nav-link p-0'>
-										About
-									</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class='col-md-3 col-6 mb-3'>
-							<h3 className='footer-h3'>follow us</h3>
-							<ul class='nav'>
-								<li class='nav-item mb-2'>
+								<li className='nav-item mb-2'>
 									<a
-										href='https://www.facebook.com/alankarpatna'
 										target='_blank'
-										class='nav-link p-0'
+										href='https://play.google.com/store/apps/details?id=com.dsoft.alankar'
+										className='nav-link p-0'
 									>
-										<FacebookOutlinedIcon />
+										Investment Plan - VYOM
 									</a>
 								</li>
-								<li class='nav-item mb-2'>
-									<a
-										href='https://instagram.com/alankar_jewellers?igshid=YmMyMTA2M2Y='
-										target='_blank'
-										class='nav-link p-0 social-links'
-									>
-										<InstagramIcon />
+								<li className='nav-item mb-2'>
+									<a href='#' className='nav-link p-0'>
+										Campaign 2022 - 2023
 									</a>
 								</li>
-
-								<li class='nav-item mb-2'>
-									<a href='#' target='_blank' class='nav-link p-0 social-links'>
-										<WhatsAppIcon />
+								<li className='nav-item mb-2'>
+									<a href='/contactus' className='nav-link p-0'>
+										Reach Us
 									</a>
 								</li>
 							</ul>
+						</div>
+
+						<div className='col-md-3 col-sm-6 mb-3'>
+							<h3 className='footer-h3'>OUR STORES</h3>
+							<div className='footer-reach-us'>
+								<p>
+									<u>
+										<strong>FLAGSHIP STORE</strong>
+									</u>
+									<br /> Alankar Business Center <br /> East Boring Center <br />
+									Patna, Bihar, India 800001 <br />
+									Tel:{' '}
+									<a className='f-nav' href='tel:+911141734567'>
+										+91 11 4173 XXXXX
+									</a>
+									<br />
+									Tel:{' '}
+									<a className='f-nav' href='tel:+911145257700'>
+										+91 11 4525 XXXXX
+									</a>
+									<br />
+									Mob:{' '}
+									<a className='f-nav' href='tel:+919811223344'>
+										+91 98112 XXXXX
+									</a>
+									<br />
+									Email:&nbsp;
+									<a class='f-nav' href='mailto:info.agj@alankarjewellers.com'>
+										info.agj@alankarjewellers.com
+									</a>
+								</p>
+								<p>
+									<u>
+										<strong>HERITAGE SHOP</strong>
+									</u>{' '}
+									<br /> Alankar Business Center <br /> East Boring Center <br />
+									Patna, Bihar, India 800001 <br />
+									Tel:{' '}
+									<a className='f-nav' href='tel:+911141734567'>
+										+91 11 4173 XXXXX
+									</a>
+									<br />
+									Tel:{' '}
+									<a className='f-nav' href='tel:+911145257700'>
+										+91 11 4525 XXXXX
+									</a>
+									<br />
+									Mob:{' '}
+									<a className='f-nav' href='tel:+919811223344'>
+										+91 98112 XXXXX
+									</a>
+									<br />
+									Email:&nbsp;
+									<a class='f-nav' href='mailto:info.agj@alankarjewellers.com'>
+										info.agj@alankarjewellers.com
+									</a>
+								</p>
+							</div>
 						</div>
 					</div>
 
-					<div class='d-flex flex-column flex-sm-row justify-content-between py-4 border-top'>
+					<div className='d-flex flex-column flex-sm-row justify-content-between py-4 border-top'>
 						<p
 							style={{
 								fontSize: '14px',
 								letterSpacing: '1px',
 								fontFamily: 'RegularCaslon',
 								marginBotttom: '0px',
+								color: '#fff',
 							}}
 						>
 							© 2023 Alankar, Inc. All rights reserved.
