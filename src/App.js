@@ -3,13 +3,13 @@ import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 
-import { AnimatePresence } from 'framer-motion';
-import { motion } from 'framer-motion';
-
 // home jewellery component images
 import img1 from './assets/model/HomeJewel3.jpg';
+import img_1_placeholder from "./assets/model/HomeJewel1placeholder.jpg";
 import img2 from './assets/model/HomeJewel1.jpg';
+import img_2_placeholder from "./assets/model/HomeJewel2placeholder.jpg";
 import img3 from './assets/model/HomeJewel2.jpg';
+import img_3_placeholder from "./assets/model/HomeJewel3placeholder.jpg";
 
 // all components
 import SplashScreen from './components/splashscreen/SplashScreen';
@@ -41,65 +41,62 @@ function App() {
 	if (loading) return <SplashScreen />;
 
 	return (
-		<div style={{}} className='App'>
-			<Router>
-				<Navbar />
-				<AnimatePresence>
-					<Routes>
-						<Route
-							path='/'
-							element={
-								<>
-									<motion.div
-										initial={{ opacity: 0, y: 500 }}
-										animate={{ opacity: 1, y: 0 }}
-										exit={{ opacity: 0 }}
-									>
-										<HeroSection />
-										<DiscoverCollections />
-										<HomeJewellerySection
-											img_src={img1}
-											heading={'Diamond Jewellery'}
-											paragraph={
-												'Our diamond collection features beautifully crafted necklaces, earrings, bangles and more, designed to add a brilliant sparkle and charm to your special moments.'
-											}
-											link={'/store'}
-										/>
-										<HomeJewellerySectionReverse
-											img_src={img2}
-											heading={'Gold Jewellery'}
-											paragraph={
-												'Our gold jewellery collection offers a wide range of beautifully designed pieces that are perfect for any occasion. Whether it is a special occasion or just an ordinary day.'
-											}
-											link={'/store'}
-										/>
-										<HomeJewellerySection
-											img_src={img3}
-											heading={'Polki Jewellery'}
-											paragraph={
-												'Our Polki jewellery collection features natural uncut diamonds arranged in a beautiful tapestry, resulting in stunning pieces of jewellery that are both unique and elegant.'
-											}
-											link={'/store'}
-										/>
+    <div style={{}} className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <DiscoverCollections />
+                <HomeJewellerySection
+                  img_src={img1}
+                  img_src_placeholder={img_1_placeholder}
+                  heading={"Diamond Jewellery"}
+                  paragraph={
+                    "Our diamond collection features beautifully crafted necklaces, earrings, bangles and more, designed to add a brilliant sparkle and charm to your special moments."
+                  }
+                  link={"/store"}
+                />
+                <HomeJewellerySectionReverse
+                  img_src={img2}
+                  img_src_placeholder={img_2_placeholder}
+                  heading={"Gold Jewellery"}
+                  paragraph={
+                    "Our gold jewellery collection offers a wide range of beautifully designed pieces that are perfect for any occasion. Whether it is a special occasion or just an ordinary day."
+                  }
+                  link={"/store"}
+                />
+                <HomeJewellerySection
+                  img_src={img3}
+                  img_src_placeholder={img_3_placeholder}
+                  heading={"Polki Jewellery"}
+                  paragraph={
+                    "Our Polki jewellery collection features natural uncut diamonds arranged in a beautiful tapestry, resulting in stunning pieces of jewellery that are both unique and elegant."
+                  }
+                  link={"/store"}
+                />
 
-										<Carousel />
-										{/* <OurCreations /> */}
-									</motion.div>
-								</>
-							}
-						/>
-						<Route path='/watches' element={<Watch />} />
-						<Route path='/about' element={<About />} />
-						<Route path='/engagementandbridal' element={<EngagementAndBridal />} />
-						<Route path='/store' element={<Store />} />
-						<Route path='/contactus' element={<Contactus />} />
-					</Routes>
-				</AnimatePresence>
-				<GoTop />
-				<Footer />
-			</Router>
-		</div>
-	);
+                <Carousel />
+              </>
+            }
+          />
+          <Route path="/watches" element={<Watch />} />
+          <Route path="/about" element={<About />} />
+          <Route
+            path="/engagementandbridal"
+            element={<EngagementAndBridal />}
+          />
+          <Route path="/store" element={<Store />} />
+          <Route path="/contactus" element={<Contactus />} />
+        </Routes>
+        <GoTop />
+        <Footer />
+      </Router>
+    </div>
+  );
 }
 
 export default App;

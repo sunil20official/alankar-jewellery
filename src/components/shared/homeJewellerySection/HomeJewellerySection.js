@@ -5,6 +5,7 @@ import "./HomeJewellerySection.css";
 
 const HomeJewellerySection = ({
   img_src,
+  img_src_placeholder,
   img_float,
   heading,
   paragraph,
@@ -15,14 +16,15 @@ const HomeJewellerySection = ({
     <div>
       <div>
         <div className="jewellery-container">
-          <div className="left-section-container">
+          <div className="left-section-container" data-aos="fade-up">
             <LazyLoadImage
               className="img-float-right"
               src={img_src}
+              PlaceholderSrc={img_src_placeholder}
               alt="jewellery section for home page"
             />
           </div>
-          <div className="right-section-container animate__fadeInUp">
+          <div className="right-section-container" data-aos="fade-up">
             <h4>{heading}</h4>
             <p>{paragraph}</p>
             <button
