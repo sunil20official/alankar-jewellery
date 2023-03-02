@@ -5,6 +5,7 @@ import "./HomeJewellerySection.css";
 
 const HomeJewellerySection = ({
   img_src,
+  img_src_placeholder,
   img_float,
   heading,
   paragraph,
@@ -19,6 +20,7 @@ const HomeJewellerySection = ({
             <LazyLoadImage
               className="img-float-right"
               src={img_src}
+              PlaceholderSrc={img_src_placeholder}
               alt="jewellery section for home page"
             />
           </div>

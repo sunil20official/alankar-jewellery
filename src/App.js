@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 // home jewellery component images
 import img1 from './assets/model/HomeJewel3.jpg';
 import img2 from './assets/model/HomeJewel1.jpg';
+import img_1_placeholder from './assets/model/HomeJewel1placeholder.jpg';
 import img3 from './assets/model/HomeJewel2.jpg';
 
 // all components
@@ -38,56 +39,60 @@ function App() {
 	if (loading) return <SplashScreen />;
 
 	return (
-		<div style={{}} className='App'>
-			<Router>
-				<Navbar />
-					<Routes>
-						<Route
-							path='/'
-							element={
-								<>
-										<HeroSection />
-										<DiscoverCollections />
-										<HomeJewellerySection
-											img_src={img1}
-											heading={'Diamond Jewellery'}
-											paragraph={
-												'Our diamond collection features beautifully crafted necklaces, earrings, bangles and more, designed to add a brilliant sparkle and charm to your special moments.'
-											}
-											link={'/store'}
-										/>
-										<HomeJewellerySectionReverse
-											img_src={img2}
-											heading={'Gold Jewellery'}
-											paragraph={
-												'Our gold jewellery collection offers a wide range of beautifully designed pieces that are perfect for any occasion. Whether it is a special occasion or just an ordinary day.'
-											}
-											link={'/store'}
-										/>
-										<HomeJewellerySection
-											img_src={img3}
-											heading={'Polki Jewellery'}
-											paragraph={
-												'Our Polki jewellery collection features natural uncut diamonds arranged in a beautiful tapestry, resulting in stunning pieces of jewellery that are both unique and elegant.'
-											}
-											link={'/store'}
-										/>
+    <div style={{}} className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <DiscoverCollections />
+                <HomeJewellerySection
+                  img_src={img1}
+                  img_src_placeholder={img_1_placeholder}
+                  heading={"Diamond Jewellery"}
+                  paragraph={
+                    "Our diamond collection features beautifully crafted necklaces, earrings, bangles and more, designed to add a brilliant sparkle and charm to your special moments."
+                  }
+                  link={"/store"}
+                />
+                <HomeJewellerySectionReverse
+                  img_src={img2}
+                  heading={"Gold Jewellery"}
+                  paragraph={
+                    "Our gold jewellery collection offers a wide range of beautifully designed pieces that are perfect for any occasion. Whether it is a special occasion or just an ordinary day."
+                  }
+                  link={"/store"}
+                />
+                <HomeJewellerySection
+                  img_src={img3}
+                  heading={"Polki Jewellery"}
+                  paragraph={
+                    "Our Polki jewellery collection features natural uncut diamonds arranged in a beautiful tapestry, resulting in stunning pieces of jewellery that are both unique and elegant."
+                  }
+                  link={"/store"}
+                />
 
-										<Carousel />
-								</>
-							}
-						/>
-						<Route path='/watches' element={<Watch />} />
-						<Route path='/about' element={<About />} />
-						<Route path='/engagementandbridal' element={<EngagementAndBridal />} />
-						<Route path='/store' element={<Store />} />
-						<Route path='/contactus' element={<Contactus />} />
-					</Routes>
-				<GoTop />
-				<Footer />
-			</Router>
-		</div>
-	);
+                <Carousel />
+              </>
+            }
+          />
+          <Route path="/watches" element={<Watch />} />
+          <Route path="/about" element={<About />} />
+          <Route
+            path="/engagementandbridal"
+            element={<EngagementAndBridal />}
+          />
+          <Route path="/store" element={<Store />} />
+          <Route path="/contactus" element={<Contactus />} />
+        </Routes>
+        <GoTop />
+        <Footer />
+      </Router>
+    </div>
+  );
 }
 
 export default App;
