@@ -5,9 +5,11 @@ import { Routes, Route } from 'react-router-dom';
 
 // home jewellery component images
 import img1 from './assets/model/HomeJewel3.jpg';
+import img_1_placeholder from "./assets/model/HomeJewel1placeholder.jpg";
 import img2 from './assets/model/HomeJewel1.jpg';
-import img_1_placeholder from './assets/model/HomeJewel1placeholder.jpg';
+import img_2_placeholder from "./assets/model/HomeJewel2placeholder.jpg";
 import img3 from './assets/model/HomeJewel2.jpg';
+import img_3_placeholder from "./assets/model/HomeJewel3placeholder.jpg";
 
 // all components
 import SplashScreen from './components/splashscreen/SplashScreen';
@@ -60,6 +62,7 @@ function App() {
                 />
                 <HomeJewellerySectionReverse
                   img_src={img2}
+                  img_src_placeholder={img_2_placeholder}
                   heading={"Gold Jewellery"}
                   paragraph={
                     "Our gold jewellery collection offers a wide range of beautifully designed pieces that are perfect for any occasion. Whether it is a special occasion or just an ordinary day."
@@ -68,6 +71,7 @@ function App() {
                 />
                 <HomeJewellerySection
                   img_src={img3}
+                  img_src_placeholder={img_3_placeholder}
                   heading={"Polki Jewellery"}
                   paragraph={
                     "Our Polki jewellery collection features natural uncut diamonds arranged in a beautiful tapestry, resulting in stunning pieces of jewellery that are both unique and elegant."
