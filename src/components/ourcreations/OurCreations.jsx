@@ -5,7 +5,7 @@ import HeadComponent from '../shared/headingcomponent/HeadingComponent';
 
 // Images
 import Image1 from '../../assets/watchs/Watch3.jpg';
-import Image2 from '../../assets/creationsImage/PNeckLace.jpg';
+import Image2 from '../../assets/creationsImage/PNeckLace.png';
 import Image3 from '../../assets/creationsImage/Bangal2.jpg';
 import Image4 from '../../assets/creationsImage/Bangal2.jpg';
 import Image5 from '../../assets/creationsImage/Bangal3.jpg';

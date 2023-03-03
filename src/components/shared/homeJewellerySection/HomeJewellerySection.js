@@ -21,6 +21,7 @@ const HomeJewellerySection = ({
               className="img-float-right"
               src={img_src}
               PlaceholderSrc={img_src_placeholder}
+              effect='blur'
               alt="jewellery section for home page"
             />
           </div>

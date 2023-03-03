@@ -1,10 +1,5 @@
 import React from 'react';
 import './Footer.css';
-// import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-// import InstagramIcon from '@mui/icons-material/Instagram';
-// import TwitterIcon from '@mui/icons-material/Twitter';
-// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-// import YouTubeIcon from '@mui/icons-material/YouTube';
 import logo from '../../assets/logo_low_white.png';
 import WriteToUS from './writeToUs';
 

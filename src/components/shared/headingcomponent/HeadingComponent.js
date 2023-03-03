@@ -7,7 +7,7 @@ const HeadingComponent = ({ heading, paragraph, marginTop, paragraph2, paragraph
 			<div className='heading-comp-content'>
 				<h1 className='heading-comp-h1'>{heading}</h1>
 				<hr className='heading-comp-line'></hr>
-				<p className='heading-comp-p'>{paragraph}</p>
+				<p className='heading-comp-p'>{paragraph}</p><br/>
 				<p className='heading-comp-p'>{paragraph2}</p>
 				<p className='heading-comp-p'>{paragraph3}</p>
 			</div>
