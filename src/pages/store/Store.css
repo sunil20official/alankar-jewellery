@@ -26,7 +26,6 @@
   font-size: 14px;
   letter-spacing: 1px;
   color: #fff;
-  border-radius: 5px;
 }
 
 .active-filter-item{
@@ -49,7 +48,6 @@
 }
 
 .store-grid > div {
-  border: 5px solid #fbbc93;
   height: 275px;
   aspect-ratio: 1/1;
   margin: auto;

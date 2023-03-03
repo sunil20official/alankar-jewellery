@@ -6,12 +6,12 @@ import ButtonComponent from '../../components/shared/buttonComponent/ButtonCompo
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 // importing images for the collection page
 import img1 from '../../assets/creationsImage/Bangal2.jpg';
-import img2 from '../../assets/creationsImage/Bangal (Custom).jpg';
-import img3 from '../../assets/creationsImage/Bangal.jpg';
+import img2 from '../../assets/creationsImage/Bangal__Custom.png';
+import img3 from '../../assets/creationsImage/Bangal__Custom.png';
 import img4 from '../../assets/creationsImage/Bangal3.jpg';
 import img5 from '../../assets/creationsImage/Bangal4.jpg';
-import img6 from '../../assets/creationsImage/EarPiece.jpg';
-import img7 from '../../assets/creationsImage/PNeckLace.jpg';
+import img6 from '../../assets/creationsImage/EarPiece.png';
+import img7 from '../../assets/creationsImage/PNeckLace.png';
 
 const Store = () => {
 	const all = [img1, img2, img3, img4, img5, img6, img7, img3];

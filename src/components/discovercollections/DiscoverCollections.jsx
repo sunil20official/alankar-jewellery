@@ -1,8 +1,8 @@
 import React from 'react';
 import './DiscoverCollection.css';
-import Image2 from '../../assets/creationsImage/EarPiece.jpg';
-import Image1 from '../../assets/creationsImage/PNeckLace.jpg';
-import Image3 from '../../assets/creationsImage/Bangal.jpg';
+import Image2 from '../../assets/creationsImage/EarPiece.png';
+import Image1 from '../../assets/creationsImage/PNeckLace.png';
+import Image3 from '../../assets/creationsImage/Bangal__Custom.png';
 import { useNavigate } from 'react-router-dom';
 // import ButtonComponent from '../shared/buttonComponent/ButtonComponent';
 
