@@ -29,10 +29,12 @@
 
 .img-float-right {
   float: right;
+  width: 95%;
 }
 
 .img-float-left {
   float: left;
+  width: 95%;
 }
 
 .right-section-container {
