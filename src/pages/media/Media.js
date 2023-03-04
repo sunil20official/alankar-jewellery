@@ -78,7 +78,9 @@ const Media = () => {
     <div>
       <HeadingComponent
         heading={"Our Booklets"}
-        // paragraph={""}
+        paragraph={
+          "Explore our timeless collections with the latest Alankar booklets."
+        }
         // paragraph2={""}
         marginTop={"0px"}
       />
@@ -108,7 +110,10 @@ const Media = () => {
           >
             {booklets.map((booklet) => (
               <SwiperSlide>
-                <div className="booklet-container" onClick={() => onClickBooklet(booklet.pdf_url)}>
+                <div
+                  className="booklet-container"
+                  onClick={() => onClickBooklet(booklet.pdf_url)}
+                >
                   <img
                     className="booklet-img"
                     src={booklet.img_src}
