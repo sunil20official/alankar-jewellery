@@ -23,6 +23,7 @@ import Footer from './components/footer/Footer.jsx';
 import About from './pages/aboutus/About';
 import EngagementAndBridal from './pages/engagementandbridal/EngagementAndBridal';
 import Watch from './pages/watches/Watch';
+import Media from './pages/media/Media';
 import GoTop from './components/GoTop';
 import Store from './pages/store/Store';
 import Contactus from './pages/contactus/Contactus';
@@ -84,6 +85,7 @@ function App() {
             }
           />
           <Route path="/watches" element={<Watch />} />
+          <Route path="/media" element={<Media />} />
           <Route path="/about" element={<About />} />
           <Route
             path="/engagementandbridal"

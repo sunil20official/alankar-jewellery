@@ -150,7 +150,7 @@ const Navbar = () => {
             </h1>
             <ul>
               {/* location icon */}
-              <li onClick={() => navigate('/contactus')}>
+              <li onClick={() => navigate("/contactus")}>
                 <svg
                   width="25"
                   height="25"
@@ -213,6 +213,14 @@ const Navbar = () => {
               <li
                 onClick={() => {
                   setOpen(!open);
+                  navigate("/media");
+                }}
+              >
+                Media
+              </li>
+              <li
+                onClick={() => {
+                  setOpen(!open);
                   navigate("/contactus");
                 }}
               >
@@ -242,7 +250,6 @@ const Navbar = () => {
         <div class="offcanvas-body">
           <ul style={{ paddingLeft: "0px" }} className="mobile_links_container">
             <li
-              
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -259,7 +266,6 @@ const Navbar = () => {
               Our Collection
             </li>
             <li
-              
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -268,7 +274,6 @@ const Navbar = () => {
               Engagement & Bridal
             </li>
             <li
-              
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
@@ -277,7 +282,14 @@ const Navbar = () => {
               Watches
             </li>
             <li
-              
+              className="mobile_nav_link"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              onClick={() => onClickMobileBurger("/media")}
+            >
+              Media
+            </li>
+            <li
               className="mobile_nav_link"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
