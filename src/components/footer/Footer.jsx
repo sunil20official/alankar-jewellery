@@ -2,6 +2,9 @@ import React from 'react';
 import './Footer.css';
 import logo from '../../assets/logo_low_white.png';
 import WriteToUS from './writeToUs';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Footer = () => {
 	return (
@@ -10,7 +13,7 @@ const Footer = () => {
 				<footer className='p-5'>
 					<div className='row'>
 						<div className='col-md-3 col-sm-6 mb-3'>
-							<div className='Footer-logo'>
+							<div className='Footer-logo text-center'>
 								<img src={logo} alt='logoInFooter' />
 							</div>
 							<p className='footer-text'>
@@ -100,9 +103,11 @@ const Footer = () => {
 								</p>
 								<p>
 									<u>
+										{/* ,  Patna, Bihar 800001 */}
 										<strong>HERITAGE SHOP</strong>
 									</u>{' '}
-									<br /> Alankar Business Center <br /> East Boring Center <br />
+									<br /> West Boring Canal Rd <br /> Sri Krishna Nagar, Buddha Colony,{' '}
+									<br />
 									Patna, Bihar, India 800001 <br />
 									Tel:{' '}
 									<a className='f-nav' href='tel:+911141734567'>
@@ -129,17 +134,47 @@ const Footer = () => {
 					</div>
 
 					<div className='d-flex flex-column flex-sm-row justify-content-between py-4 border-top'>
-						<p
-							style={{
-								fontSize: '14px',
-								letterSpacing: '1px',
-								fontFamily: 'RegularCaslon',
-								marginBotttom: '0px',
-								color: '#fff',
-							}}
-						>
-							© 2023 Alankar, Inc. All rights reserved.
-						</p>
+						<div>
+							<p
+								style={{
+									fontSize: '14px',
+									letterSpacing: '1px',
+									fontFamily: 'RegularCaslon',
+									marginBotttom: '0px',
+									color: '#fff',
+								}}
+							>
+								© 2023 Alankar, Inc. All rights reserved.
+							</p>
+						</div>
+						<div className='social-links'>
+							<ul class='nav'>
+								<li class='nav-item'>
+									<a
+										href='https://www.facebook.com/alankarpatna'
+										target='_blank'
+										class='nav-link p-0'
+									>
+										<FacebookOutlinedIcon />
+									</a>
+								</li>
+								<li class='nav-item'>
+									<a
+										href='https://instagram.com/alankar_jewellers?igshid=YmMyMTA2M2Y='
+										target='_blank'
+										class='nav-link p-0 social-links'
+									>
+										<InstagramIcon />
+									</a>
+								</li>
+
+								<li class='nav-item'>
+									<a href='#' target='_blank' class='nav-link p-0 social-links'>
+										<WhatsAppIcon />
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</footer>
 			</div>

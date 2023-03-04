@@ -52,6 +52,11 @@
 	color: #fbbc93;
 }
 
+.social-links a {
+	margin-right: 5px !important;
+	border-bottom: none !important;
+}
+
 .nav .nav-item .social-links {
 	margin-left: 8px;
 }
@@ -71,4 +76,10 @@
 
 .nav .nav-item .social-links:hover {
 	color: #fbbc93;
+}
+
+@media screen and (max-width: 900px) {
+	.col-sm-6 {
+		margin-bottom: 5rem !important;
+	}
 }

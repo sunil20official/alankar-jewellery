@@ -24,7 +24,7 @@ const Watch = () => {
 			</div>
 			<div className='div'>
 				<HeadingComponent
-					heading={'Watchmaking'}
+					heading={'Watch collections'}
 					paragraph={
 						'At Alankar Jewellers, we are proud to offer an exceptional collection of luxury watches.'
 					}
