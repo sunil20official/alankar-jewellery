@@ -32,6 +32,7 @@
   color: #fbbc93;
   background-color: black;
   border: 2px solid #fbbc93;
+  border-radius: 5px;
 }
 
 .store-container {
