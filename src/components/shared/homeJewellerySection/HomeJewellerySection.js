@@ -14,14 +14,14 @@ const HomeJewellerySection = ({
   const navigate = useNavigate();
   return (
     <div>
-      <div>
+      <div data-aos="fade-up">
         <div className="jewellery-container">
-          <div className="left-section-container" data-aos="fade-up">
+          <div className="left-section-container">
             <LazyLoadImage
               className="img-float-right"
               src={img_src}
               PlaceholderSrc={img_src_placeholder}
-              effect='blur'
+              effect="blur"
               alt="jewellery section for home page"
             />
           </div>

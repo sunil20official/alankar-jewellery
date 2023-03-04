@@ -1,12 +1,17 @@
 import React from "react";
 import "./Media.css";
 import HeadingComponent from "../../components/shared/headingcomponent/HeadingComponent";
+// images of booklets
 import Slide1 from "../../assets/model/1.jpg";
 import Slide2 from "../../assets/model/2.jpg";
 import Slide3 from "../../assets/model/3.jpg";
 import Slide4 from "../../assets/model/4.jpg";
 import Slide5 from "../../assets/model/5.jpg";
 import Slide6 from "../../assets/model/6.jpg";
+
+// importing pdf booklets 
+import pdf1 from '../../assets/booklets/samplebooklet.pdf';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -25,12 +30,56 @@ const pagination = {
 };
 
 const Media = () => {
+
+  const booklets = [
+    {
+      img_src: Slide1,
+      pdf_url: pdf1,
+      title: "Alankar Booklet",
+      year: "2016",
+    },
+    {
+      img_src: Slide2,
+      pdf_url: pdf1,
+      title: "Alankar Booklet",
+      year: "2017",
+    },
+    {
+      img_src: Slide3,
+      pdf_url: pdf1,
+      title: "Alankar Booklet",
+      year: "2018",
+    },
+    {
+      img_src: Slide4,
+      pdf_url: pdf1,
+      title: "Alankar Booklet",
+      year: "2019",
+    },
+    {
+      img_src: Slide5,
+      pdf_url: pdf1,
+      title: "Alankar Booklet",
+      year: "2020",
+    },
+    {
+      img_src: Slide6,
+      pdf_url: pdf1,
+      title: "Alankar Booklet",
+      year: "2022",
+    },
+  ];
+
+  const onClickBooklet = (pdf) => {
+    window.open(pdf)
+  }
+
   return (
     <div>
       <HeadingComponent
         heading={"Our Booklets"}
-        paragraph={""}
-        paragraph2={""}
+        // paragraph={""}
+        // paragraph2={""}
         marginTop={"0px"}
       />
       <div className="media-page-container">
@@ -57,72 +106,19 @@ const Media = () => {
             modules={[Pagination]}
             className="mySwiper"
           >
-            <SwiperSlide>
-              <div className="booklet-container">
-                <img
-                  className="booklet-img"
-                  src={Slide1}
-                  alt="alankar booklet"
-                />
-                <p className="booklet-title">Alankar booklet 2022</p>
-                <p className="booklet-year">2022</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="booklet-container">
-                <img
-                  className="booklet-img"
-                  src={Slide2}
-                  alt="alankar booklet"
-                />
-                <p className="booklet-title">Alankar booklet 2022</p>
-                <p className="booklet-year">2021</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="booklet-container">
-                <img
-                  className="booklet-img"
-                  src={Slide3}
-                  alt="alankar booklet"
-                />
-                <p className="booklet-title">Alankar booklet 2022</p>
-                <p className="booklet-year">2020</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="booklet-container">
-                <img
-                  className="booklet-img"
-                  src={Slide1}
-                  alt="alankar booklet"
-                />
-                <p className="booklet-title">Alankar booklet 2022</p>
-                <p className="booklet-year">2022</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="booklet-container">
-                <img
-                  className="booklet-img"
-                  src={Slide4}
-                  alt="alankar booklet"
-                />
-                <p className="booklet-title">Alankar booklet 2022</p>
-                <p className="booklet-year">2021</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="booklet-container">
-                <img
-                  className="booklet-img"
-                  src={Slide5}
-                  alt="alankar booklet"
-                />
-                <p className="booklet-title">Alankar booklet 2022</p>
-                <p className="booklet-year">2020</p>
-              </div>
-            </SwiperSlide>
+            {booklets.map((booklet) => (
+              <SwiperSlide>
+                <div className="booklet-container" onClick={() => onClickBooklet(booklet.pdf_url)}>
+                  <img
+                    className="booklet-img"
+                    src={booklet.img_src}
+                    alt="alankar booklet"
+                  />
+                  <p className="booklet-title">{booklet.title}</p>
+                  <p className="booklet-year">{booklet.year}</p>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

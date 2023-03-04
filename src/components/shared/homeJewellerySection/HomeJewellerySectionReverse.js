@@ -13,7 +13,7 @@ const HomeJewellerySectionReverse = ({
   const navigate = useNavigate();
   return (
     <div>
-      <div>
+      <div data-aos="fade-up">
         <div className="jewellery-container-rev">
           <div className="left-section-container">
             <LazyLoadImage

@@ -5,12 +5,13 @@
 }
 
 .booklet-container {
-  height: 600px;
+  height: 500px;
   width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .booklet-img {
