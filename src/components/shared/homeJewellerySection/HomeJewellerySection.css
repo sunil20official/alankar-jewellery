@@ -30,11 +30,13 @@
 .img-float-right {
 	float: right;
 	width: 100%;
+	aspect-ratio: 5/3;
 }
 
 .img-float-left {
 	float: left;
 	width: 95%;
+	aspect-ratio: 5/3;
 }
 
 .right-section-container {
@@ -128,5 +130,19 @@
 		text-align: center;
 		font-family: 'PT Serif', serif;
 		min-height: 300px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.img-float-right {
+		float: right;
+		width: 100%;
+		aspect-ratio: auto;
+	}
+
+	.img-float-left {
+		float: left;
+		width: 100%;
+		aspect-ratio: auto;
 	}
 }
