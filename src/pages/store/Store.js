@@ -28,116 +28,112 @@ const Store = () => {
 		console.log('comp rerender');
 	}, [currCollection, currFilter]);
 	return (
-    <div>
-      <img
-        className="page-top-image"
-        style={{ width: "100%" }}
-        src={image1}
-        alt="page top"
-      />
-      <HeadingComponent
-        heading={"Our Collection"}
-        paragraph={
-          "Indulge in the allure of timeless elegance and explore our exquisite jewellery collections at Alankar Jewellers. Each piece is crafted with precision and care, featuring intricate designs that exude sophistication and charm."
-        }
-        paragraph2={
-          "From classic to contemporary, our collections offer a range of fascinating styles that will elevate your look for any occasion. Come discover the perfect piece to add to your collection today."
-        }
-        marginTop={"0px"}
-      />
-      <div className="filter-component-container">
-        <div className="filter-container">
-          <div
-            className={
-              "filter-item " + (currFilter === "all" && "active-filter-item")
-            }
-            onClick={() => {
-              setCurrCollection(all);
-              setCurrFilter("all");
-            }}
-          >
-            All
-          </div>
-          <div
-            className={
-              "filter-item " +
-              (currFilter === "bangles" && "active-filter-item")
-            }
-            onClick={() => {
-              setCurrCollection(bangles);
-              setCurrFilter("bangles");
-            }}
-          >
-            Bangles
-          </div>
-          <div
-            className={
-              "filter-item " +
-              (currFilter === "bracelets" && "active-filter-item")
-            }
-            onClick={() => {
-              setCurrCollection(bracelet);
-              setCurrFilter("bracelets");
-            }}
-          >
-            Bracelets
-          </div>
-          <div
-            className={
-              "filter-item " +
-              (currFilter === "necklace" && "active-filter-item")
-            }
-            onClick={() => {
-              setCurrCollection(necklace);
-              setCurrFilter("necklace");
-            }}
-          >
-            Necklace
-          </div>
-          <div
-            className={
-              "filter-item " +
-              (currFilter === "earring" && "active-filter-item")
-            }
-            onClick={() => {
-              setCurrCollection(earring);
-              setCurrFilter("earring");
-            }}
-          >
-            Earrings
-          </div>
-          <div
-            className={
-              "filter-item " + (currFilter === "rings" && "active-filter-item")
-            }
-            onClick={() => {
-              setCurrCollection(rings);
-              setCurrFilter("rings");
-            }}
-          >
-            Rings
-          </div>
-        </div>
-      </div>
-      <div className="store-container">
-        <div className="store-grid">
-          {currCollection.map((item) => (
-            <div className="item-container">
-              <LazyLoadImage
-                style={{ width: "100%" }}
-                src={item}
-                effect="blur"
-                alt="collection of pics from alankar store"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-      <div style={{ margin: "3rem auto" }}>
-        <ButtonComponent />
-      </div>
-    </div>
-  );
+		<div>
+			<img
+				className='page-top-image'
+				style={{ width: '100%' }}
+				src={image1}
+				alt='page top'
+			/>
+			<HeadingComponent
+				heading={'Our Collection'}
+				paragraph={
+					'Indulge in the allure of timeless elegance and explore our exquisite jewellery collections at Alankar Jewellers. Each piece is crafted with precision and care, featuring intricate designs that exude sophistication and charm.'
+				}
+				paragraph2={
+					'From classic to contemporary, our collections offer a range of fascinating styles that will elevate your look for any occasion. Come discover the perfect piece to add to your collection today.'
+				}
+				marginTop={'0px'}
+			/>
+			<div className='filter-component-container'>
+				<div className='filter-container'>
+					<div
+						className={
+							'filter-item ' + (currFilter === 'all' && 'active-filter-item')
+						}
+						onClick={() => {
+							setCurrCollection(all);
+							setCurrFilter('all');
+						}}
+					>
+						All
+					</div>
+					<div
+						className={
+							'filter-item ' + (currFilter === 'bangles' && 'active-filter-item')
+						}
+						onClick={() => {
+							setCurrCollection(bangles);
+							setCurrFilter('bangles');
+						}}
+					>
+						Bangles
+					</div>
+					<div
+						className={
+							'filter-item ' + (currFilter === 'bracelets' && 'active-filter-item')
+						}
+						onClick={() => {
+							setCurrCollection(bracelet);
+							setCurrFilter('bracelets');
+						}}
+					>
+						Bracelets
+					</div>
+					<div
+						className={
+							'filter-item ' + (currFilter === 'necklace' && 'active-filter-item')
+						}
+						onClick={() => {
+							setCurrCollection(necklace);
+							setCurrFilter('necklace');
+						}}
+					>
+						Necklace
+					</div>
+					<div
+						className={
+							'filter-item ' + (currFilter === 'earring' && 'active-filter-item')
+						}
+						onClick={() => {
+							setCurrCollection(earring);
+							setCurrFilter('earring');
+						}}
+					>
+						Earrings
+					</div>
+					<div
+						className={
+							'filter-item ' + (currFilter === 'rings' && 'active-filter-item')
+						}
+						onClick={() => {
+							setCurrCollection(rings);
+							setCurrFilter('rings');
+						}}
+					>
+						Rings
+					</div>
+				</div>
+			</div>
+			<div className='store-container'>
+				<div className='store-grid'>
+					{currCollection.map((item) => (
+						<div className='item-container'>
+							<LazyLoadImage
+								style={{ width: '100%' }}
+								src={item}
+								effect='blur'
+								alt='collection of pics from alankar store'
+							/>
+						</div>
+					))}
+				</div>
+			</div>
+			<div style={{ margin: '3rem auto' }}>
+				<ButtonComponent />
+			</div>
+		</div>
+	);
 };
 
 export default Store;

@@ -1,63 +1,25 @@
-import React, { useRef } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from 'react';
+import '../heroSection/HeroSection.css';
+import VideoBg from '../../assets/Video3.mp4';
 
-import img1 from '../../assets/model/HomeJewel1.jpg';
-import img2 from '../../assets/model/HomeJewel2.jpg';
-import img3 from '../../assets/model/HomeJewel3.jpg';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import './HeroSection.css';
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper';
-
-export default function App() {
-	const progressCircle = useRef(null);
-	const progressContent = useRef(null);
-	const onAutoplayTimeLeft = (s, time, progress) => {
-		progressCircle.current.style.setProperty('--progress', 1 - progress);
-		progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-	};
+const HeroSection = () => {
 	return (
-		<>
-			<Swiper
-				centeredSlides={true}
-				autoplay={{
-					delay: 2500,
-					disableOnInteraction: false,
-				}}
-				// pagination={{
-				// 	clickable: true,
-				// }}
-				// navigation={true}
-				modules={[Autoplay, Pagination, Navigation]}
-				onAutoplayTimeLeft={onAutoplayTimeLeft}
-				className='mySwiper'
-			>
-				<div>
-					<SwiperSlide>
-						<img src={img1} alt='' />
-					</SwiperSlide>
-					<SwiperSlide>
-						<img src={img2} alt='' />
-					</SwiperSlide>
-					<SwiperSlide>
-						<img src={img3} alt='' />
-					</SwiperSlide>
-				</div>
-
-				{/* <div className='autoplay-progress' slot='container-end'>
-					<svg viewBox='0 0 48 48' ref={progressCircle}>
-						<circle cx='24' cy='24' r='20'></circle>
-					</svg>
-					<span ref={progressContent}></span>
-				</div> */}
-			</Swiper>
-		</>
+		<div className='heroSection_main'>
+			<video
+				src={VideoBg}
+				preload='auto'
+				autoPlay
+				loop
+				muted
+				playsinline
+				alt='background video for herosection'
+			></video>
+			{/* <div className='heroSection_content'>
+				<h1>Alankar Jewellars</h1>
+				<p>It will be Your Lucky One</p>
+			</div> */}
+		</div>
 	);
-}
+};
+
+export default HeroSection;
